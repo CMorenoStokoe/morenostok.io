@@ -1,4 +1,7 @@
 /*GLOBAL*/
+*{
+    font-family: 'Baloo Tamma 2', cursive;
+}
 .centerTxts{
     text-align: center;
 }
@@ -28,15 +31,28 @@ th,td{
 }
 
 .lato{
-    font-family: 'Lato', sans-serif;
+    font-family: 'Baloo Tamma 2', cursive;
 }
 
 .navbar-custom{
     background-color: #2b333b;
     border-bottom: 3px solid !important;
     border-color: cadetblue !important;
-    font-family: 'Lato', sans-serif;
+    font-family: 'Baloo Tamma 2', cursive;
 }
+.socials{
+    color: ghostwhite;
+    font-size: 2rem;
+    padding: 5px;
+}
+.socials:hover{
+    text-decoration: none;    
+}
+.dropdown-menu{
+    background-color: #2b333b;
+
+}
+
 #title{
     padding: 5px;
     color: white;
