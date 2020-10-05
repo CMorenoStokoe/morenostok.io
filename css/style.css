@@ -2,6 +2,9 @@
 *{
     font-family: 'Baloo Tamma 2', cursive;
 }
+body{
+    background-color: ghostwhite;
+}
 .centerTxts{
     text-align: center;
 }
@@ -35,18 +38,28 @@ th,td{
 }
 
 .navbar-custom{
-    background-color: #2b333b;
+    background-color: #021227;
     border-bottom: 3px solid !important;
     border-color: cadetblue !important;
     font-family: 'Baloo Tamma 2', cursive;
 }
 .socials{
     color: ghostwhite;
-    font-size: 2rem;
-    padding: 5px;
+    font-size: 1rem;
+    padding: 10px;
+}
+.socialsLrg{
+    color: ghostwhite;
+    font-size: 1.5rem;
+    padding: 10px;
+}
+.socialsLrg:hover{
+    text-decoration: none; 
+    color: cadetblue;   
 }
 .socials:hover{
     text-decoration: none;    
+    color: cadetblue;   
 }
 .dropdown-menu{
     background-color: #2b333b;
@@ -96,6 +109,7 @@ th,td{
 }
 .icon-promo{
     height:60px;
+    border-radius: 5px;
 }
 .icon-lrg{
     height:100px;
