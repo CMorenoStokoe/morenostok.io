@@ -91,6 +91,9 @@ th,td{
 .card-columns{
     column-gap: 4rem !important;
 }
+.card-footer{
+    height: 60px !important;
+}
 
 /*FOOT*/
 .navbar-custom-foot{
@@ -111,11 +114,16 @@ th,td{
     height:60px;
     border-radius: 5px;
 }
+.icon-projects{
+    max-width:100%;
+    max-height:100%;
+}
 .icon-lrg{
     height:100px;
 }
 .icon-sm{
-    height: 30px;
+    width: 80px;
+    height: auto;
     float: right;
 }
 
