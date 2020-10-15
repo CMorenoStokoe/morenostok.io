@@ -151,14 +151,14 @@ function generateEpiconLinks(epiconSet){
 
         // Make icon preview
         var img = document.createElement('IMG');
-            img.src=`${id}/${icon}.PNG`;
+            img.src=`${id}/${icon}.png`;
             img.className = 'epicon mt-4 mx-auto d-block';
         div.appendChild(img);
             
         // Add links for each
         var p = document.createElement('P');
             p.className = 'epicon-link card-body';
-            p.innerText = `www.morenostok.io/epicons/${id}/${icon}.PNG`;
+            p.innerText = `www.morenostok.io/epicons/${id}/${icon}.png`;
         div.appendChild(p);
 
     }
