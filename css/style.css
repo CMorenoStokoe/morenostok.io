@@ -135,6 +135,11 @@ th,td{
     height: auto;
     float: right;
 }
+.icon-xs{
+    width: auto;
+    height: 50px;
+    float: right;
+}
 
 /* Carousel icons */
 .carousel-control-prev-icon {
