@@ -24,7 +24,7 @@
       
     <!-- Welcome banner svg -->
     <div class='d-flex h-100' id='banner'>
-      <svg height='600' width='800' id="svg-intro" style='margin:0;padding:0;background:rgb(5, 125, 161);'></svg>
+      <svg height='600' width='800' id="svg-intro" style='margin:0;padding:0;background:rgb(5, 161, 153);'></svg>
     </div>
     
     <!-- Jumbotron-->
@@ -37,18 +37,20 @@
           <strong>Good</strong><br>
           
         </h1>
-        <a class="btn btn-custom btn-lg" href="#navbar" role="button" style='background: coral; color:black; text-shadow: none;'>
-            <strong>Enter ></strong>
-        </a>
         <p class='pt-2'>
-            Knowledge games to understand and contribute to scientific research.
+            Games to understand public health.
         </p>
+        <a class="btn btn-custom btn-lg" href="#navbar" role="button" 
+        style='background: rgb(5, 161, 153); color:white; text-shadow: none; border-radius: 25px;'>
+            <h4 class='m-auto'><strong>Enter ></strong></h4>
+        </a>
       </div>
     </div>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-custom" id='navbar'>
+    <nav class="navbar navbar-custom" id='navbar' style='background: rgb(5, 161, 153);'>
         <h1 id="title" class="centerTxts">Playable games</h1>
+        <a href='https://www.morenostok.io/' target='_blank' style='color: white; text-decoration: none;'><h5>About</h5></a>
     </nav>
         
     <div class='container'>
@@ -57,15 +59,25 @@
           <!-- Projects -->
           <div class="card-columns">
 
+            <div class="jumbotron" style='width: 100%; color: black; background: none !important; border: 1px solid lightgrey;'>
+                <h1>What are knowledge games?</h1>
+                <h5 class='pt-2'>
+                    Knowledge games spread knowledge by teaching messages or contributing to scientific research. <br><br>
+                    <em style='color: rgb(238, 65, 65)'>"Knowledge games produce knowledge; solve authentic, applicable problems; or generate new ideas and possibilities for real-world change"</em>
+                    <strong>
+                        <br>- Karen Schrier, <em>Knowledge Games</em>, JHP 2016</strong><br>
+                </h5>
+            </div>
+
             <div class="card my-4">
               <img class="card-img-top" src="img/logo-outbreak.png" alt="Card image cap">
               <div class="card-body">
                 <h5 class="card-title lato d-flex align-items-center"><img class="icon-projects m-auto" src="img/logo-outbreak2.svg"></h5>
                 <p class="card-text">
                     <Strong>Educational game</Strong><br>
-                    This COVID-19 game demonstrates that the most effective policy for economic recovery, infection control and returning to normal life as soon as possible is early and stringent lockdown. Produced as part of a global multi-disciplinary team of volunteers (endcoronavirus.org).
+                    Explore trade-offs in managing the COVID-19 pandemic in this game, produced by a global team of volunteers.
                 </p>
-                <a href="https://outbreak.endcoronavirus.org" target='_blank'><button type="button" class="btn btn-primary">Play on endcornavirus.org</button></a>
+                <a href="https://outbreak.endcoronavirus.org" target='_blank'><button type="button" class="btn btn-custom">Play on endcornavirus.org</button></a>
               </div>
               <div class="card-footer">
                 <small class="text-muted">Launched Q1 2021</small>
@@ -81,9 +93,8 @@
                       
                   <Strong>Human computation game</Strong><br>
                   Contribute to ongoing genetic epidemiology research and understand the complexity of public health.
-                    Play as a public health policy maker and intervene on factors such as smoking, exercise and socialisation in order to improve the health 
-                    of a simulated nation. We used an accurate propagation model and genetic data to build a realistic simulation, as complex as the real-life situation.</p>
-                  <a href="https://www.morenostok.io/mendel" target='_blank'><button type="button" class="btn btn-primary">Play here</button></a>
+                    </p>
+                  <a href="https://www.morenostok.io/mendel" target='_blank'><button type="button" class="btn btn-custom">Play here</button></a>
                 </div>
                 <div class="card-footer">
                   <small class="text-muted">Beta Q4 2020</small>
@@ -97,17 +108,16 @@
                 <h5 class="card-title lato d-flex align-items-center"><img class="icon-projects m-auto" src="img/covid19antivaxx_icon.PNG">COVID-19 Anti-Vaxx</h5>
                 <p class="card-text">
                     <Strong>Educational micro-game</Strong><br>
-                  This game demonstrates how Anti-Vaccination movements could cost lives during the COVID-19 pandemic. 
-                  This game is designed to show how you can infect others around you, even people you've never directly met.
+                  This game demonstrates how Anti-Vaccination movements could cost lives during the COVID-19 pandemic.
                 </p>
               
-                <a href="covid/VaccineGame/"><button type="button" class="btn btn-primary">Play here</button></a>
-                <a href="https://cmorenostokoe.itch.io/covid-19-anti-vaxx" target='_blank'><button type="button" class="btn btn-primary">Play on Itch.io</button></a>
+                <a href="covid/VaccineGame/"><button type="button" class="btn btn-custom">Play here</button></a>
+                <a href="https://cmorenostokoe.itch.io/covid-19-anti-vaxx" target='_blank'><button type="button" class="btn btn-custom">Play on Itch.io</button></a>
                 
               </div>
               <div class="card-footer">
                 <small class="text-muted">Launched Q1 2021</small>
-                <img class="icon-xs" src="img/logo-dauntless.svg">
+                <img class="icon-xs" src="img/logo-dauntless-small.svg">
               </div>
             </div>
 
@@ -120,13 +130,13 @@
                     <Strong>Educational micro-game</Strong><br>
                     This game demonstrates how if you don't wear a mask you can infect people, even if you've never met them.</p>
               
-                <a href="WearAMask/"><button type="button" class="btn btn-primary">Play here</button></a>
-                <a href="https://steelcry03.itch.io/anti-mask" target='_blank'><button type="button" class="btn btn-primary">Play on Itch.io</button></a>
+                <a href="WearAMask/"><button type="button" class="btn btn-custom">Play here</button></a>
+                <a href="https://steelcry03.itch.io/anti-mask" target='_blank'><button type="button" class="btn btn-custom">Play on Itch.io</button></a>
                 
               </div>
               <div class="card-footer">
                 <small class="text-muted">Launched Q3 2020</small>
-                <img class="icon-xs" src="img/logo-dauntless.svg">
+                <img class="icon-xs" src="img/logo-dauntless-small.svg">
               </div>
             </div>
 
@@ -138,34 +148,33 @@
                 <p class="card-text">
                     
                     <Strong>Educational micro-game</Strong><br>
-                    Produced for the Research Without Borders (RWB) 2019 event, this game helped visitors to a public engagement event realise the dangers of refusing vaccinations. Herd immunity was used as a game mechanic in this prototype puzzle game.</p>
-                  <a href="antivaxx/index.html"><button type="button" class="btn btn-primary">Play here</button></a>
+                    Produced for the Research Without Borders (RWB) 2019 event, this game helped visitors to a public engagement event realise the dangers of refusing vaccinations.</p>
+                  <a href="antivaxx/index.html"><button type="button" class="btn btn-custom">Play here</button></a>
                   <a href="http://www.bris.ac.uk/doctoral-college/current-research-students/events-and-opportunities/research-without-borders/2019/" target="_blank"><i class="fas fa-calendar-check"></i> RWB 2019</a>
               </div>
               <div class="card-footer">
                 <small class="text-muted">Launched Q1 2019 </small>
-                <img class="icon-xs" src="img/logo-dauntless.svg">
+                <img class="icon-xs" src="img/logo-dauntless-small.svg">
               </div>
             </div>
 
+            <div class="jumbotron d-flex flex-column justify-content-center align-items-center text-center" style='width: 100%; color: black; background: none !important; border: 1px solid lightgrey;'>
+                <img class="icon-brand m-auto" src="img/logo-dauntless.svg">
+                <p class='pt-2'>
+                    For more information on Dauntless R&D click <a href='https://www.morenostok.io/' target='_blank'>here</a>. Thank you to the support from:
+                </p>
+                <a href="https://www.swdtp.ac.uk/" target="_blank"><img class="icon-promo m-auto p-2" src="img/esrcAndSwdtp.png"></a>
+                <a href="https://dynamicgenetics.org/" target="_blank"><img class="icon-promo m-auto p-2" src="img/dynamicGenetics.png"></a>
+                <a href="http://www.bristol.ac.uk/integrative-epidemiology/" target="_blank"><img class="icon-promo m-auto p-2" src="img/ieu.png"></a>
+                <a href="https://www.bristol.ac.uk/" target="_blank"><img class="icon-promo m-auto p-2" src="img/uob.png"></a>
+
+            </div>
+
+            <div class="jumbotron" style='width: 400px; color: black; background: none !important;'>
+                            </div>
+
       </div> <!-- /card columns -->
 
-      <div class='spacer-150'></div>
-
-  <nav class="navbar fixed-bottom navbar-custom-foot" style='border: none !important;'>
-    <img class="icon-footer" src="img/dauntless2_icon.png">
-    <div class="d-flex d-row justify-content-center align-items-center text-center">
-      <h5 class='p-2'>Supported by: </h5>
-      <a href="https://www.morenostok.io/" target="_blank"><img class="icon-promo m-auto p-2" src="img/logo-dauntless.svg"></a>
-        <a href="https://www.swdtp.ac.uk/" target="_blank"><img class="icon-promo m-auto p-2" src="img/esrcAndSwdtp.png"></a>
-
-        <a href="https://dynamicgenetics.org/" target="_blank"><img class="icon-promo m-auto p-2" src="img/dynamicGenetics.png"></a>
-
-        <a href="http://www.bristol.ac.uk/integrative-epidemiology/" target="_blank"><img class="icon-promo m-auto p-2" src="img/ieu.png"></a>
-
-        <a href="https://www.bristol.ac.uk/" target="_blank"><img class="icon-promo m-auto p-2" src="img/uob.png"></a>
-    </div>
-  </nav>
 
   <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

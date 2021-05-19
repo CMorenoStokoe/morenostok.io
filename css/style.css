@@ -18,7 +18,12 @@ body{
 th,td{
     padding: 5px;
 }
-
+.btn-custom{
+    background: rgb(5, 161, 153);
+    color: white;
+    font-weight: bold;
+    border-radius: 25px;
+}
 #mainImg{
     max-width: 100%;
     border-radius: 5px;
