@@ -31,6 +31,9 @@ th,td{
 .dropdown{
     margin-top: 10px;
 }
+.card-columns {
+    column-count: 1;
+}
 @media (min-width: 576px) { 
     .card-columns {
         column-count: 1;
