@@ -11,9 +11,11 @@
     <link rel="stylesheet" href="css/all.css">
     
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet"><!-- Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+    <!-- Stylesheet -->
     <link rel="stylesheet" href="css/style.css">
     
     <title>Games for Good</title>
@@ -25,33 +27,34 @@
       
     <!-- Welcome banner svg -->
     <div class='d-flex h-100' id='banner'>
-      <svg height='600' width='800' id="svg-intro" style='margin:0;padding:0;background:rgb(5, 161, 153);'></svg>
+      <svg height='600' width='800' id="svg-intro" style='margin:0;padding:0;' class='wavy'></svg>
     </div>
     
     <!-- Jumbotron-->
-    <div class='d-flex' style='position: absolute; top:0 ; opacity: 0.9; background: white; height: 100%;'>
+    <div class='d-flex' style='position: absolute; top:0 ; opacity: 0.9; background: #F7F3E9; height: 100%;'>
       <div class="p-4 d-flex flex-column align-items-center justify-content-between  text-center" style='width: 400px;'>
         <div>
-          <img class="icon-brand" src="img/logo-dauntless-small.svg">
-          <h1 class="display-4"><strong>Games<br>for<br>good</strong></h1>
+          <img class="icon-brand" src="img/g4g_icon.svg" >
+
+          <h1 class="display-4" style='color: #F05945; font-weight: 300;'><strong>Games<br>for<br>good</strong></h1>
         </div>
-        <h3 class='pt-2'>
+        <h3 class='pt-2' style='color: #5EAAA8; font-weight: 400;'>
             Understanding public health through gameplay.
         </h3> 
-        <a class="btn btn-custom btn-lg" href="#navbar" role="button" 
-        style='background: rgb(5, 161, 153); color:white; text-shadow: none; border-radius: 25px;'>
+        <a class="btn btn-lg pulse" href="#navbar" role="button" 
+        style='text-shadow: none; border-radius: 25px; color: #F7F3E9; background: #F05945;'>
             <h1 class='m-auto'><strong>Enter</strong></h1>
         </a>
       </div>
     </div>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-custom" id='navbar' style='background: rgb(5, 161, 153);'>
-      <h1 id="title" class="p-2">Games for good</h1>      
-      <div class='p-2 d-flex flex-column align-items-center justify-content-center'>
-        <img class="icon-brand" src="img/logo-dauntless-small.svg" style='height: 75px; width: auto;'>
-        <a href='https://www.morenostok.io/' target='_blank' style='color: white; text-decoration: underline;'><h5>by Dauntless R&D</h5></a>
-      </div>
+    <nav class="navbar navbar-custom" id='navbar' style='background: #F7F3E9;'>
+      <img class="icon-brand" src="img/g4g_icon.svg" style='height: 75px; width: auto;'>
+      <h1 id="title" class="p-2" style='color: #5EAAA8;'>Games for good</h1> 
+      <a href='#jambo'>
+        <button class='btn btn-light pulse'>Hear about new games first</button>
+      </a>    
     </nav>
         
     <div class='container'>
@@ -72,70 +75,92 @@
               <p>
                 A University of Bristol project is investigating how players of Mendel make decisions about public health interventions
                 <br>
-                <a class="btn btn-primary btn-sm" href="https://www.morenostok.io/mendel/game.html" role="button">Play Mendel</a>
+                <a class="btn btn-light btn-sm" href="https://www.morenostok.io/mendel/game.html" role="button" style='color: #F7F3E9; background: #5EAAA8;'>Play Mendel</a>
               </p>
             </li>
             <li>
               <p>
                 The decisions that OutBreak players make in response to the COVID-19 pandemic are being recorded as part of an upcoming project investigating decision making based in the Netherlands
                 <br>
-                <a class="btn btn-primary btn-sm" href="https://outbreak.endcoronavirus.org" role="button">Play OutBreak</a>
+                <a class="btn btn-light btn-sm" href="https://outbreak.endcoronavirus.org" role="button" style='color: #F7F3E9; background: #5EAAA8;'>Play OutBreak</a>
               </p>
             </li>
           </ul>
           <h5>What do we need?</h5>
-          <p>Publicity! Please spread the word in any way you can. Also consider joining our newsletter:</p>
-          <button type="button" class="btn btn-success" data-toggle="modal" data-target="#exampleModal">
-            Keep up to date with the latest knowledge games
-          </button>
+          <p>
+            Publicity! Hear about new projects by 
+            <a href='#jambo'>signing up to our newsletter</a>, or get the word out!
+          </p>
+        </div>
 
-          <!-- Modal -->
-          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Let us keep you up to date</h5>
-                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                  </button>
-                </div>
-                <div class="modal-body">
-                  <h5>Hear about new knowledge games and research projects</h5>
+        <div id='jambo' class="jumbotron text-center" style='width: 100%; color: #5EAAA8; box-shadow: 0px 0px 2px lightgray; background: #F7F3E9;'>
+          <h1>Knowledge games catalogue</h1>
+          <h5>Sign up to hear about new games first</h5>
 
-                  <!-- Mailchimp Signup Form -->
-                  <style type="text/css">
-                    #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
-                  </style>
-                  <div id="mc_embed_signup">
-                  <form action="https://morenostok.us6.list-manage.com/subscribe/post?u=f8f92538207e8a037eeafbb95&amp;id=eea7eb6df0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                      <div id="mc_embed_signup_scroll">
-                    <label for="mce-EMAIL">Subscribe</label>
-                    <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-                      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f8f92538207e8a037eeafbb95_eea7eb6df0" tabindex="-1" value=""></div>
-                      <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-                      </div>
-                  </form>
-                  </div>
-                  You can unsubscribe at any time by clicking the link in the footer of our emails. For information about our privacy practices, please contact us.
-                  We use Mailchimp as our marketing platform. By clicking below to subscribe, you acknowledge that your information will be transferred to Mailchimp for processing. <a href='https://mailchimp.com/legal/'>Learn more about Mailchimp's privacy practices here</a>.
-
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
+          <!-- Mailchimp Signup Form -->
+          <style type="text/css">
+            #mc_embed_signup{background:#fff; clear:left; font:14px Helvetica,Arial,sans-serif; }
+          </style>
+          <div id="mc_embed_signup" style='background:none;'>
+          <form action="https://morenostok.us6.list-manage.com/subscribe/post?u=f8f92538207e8a037eeafbb95&amp;id=eea7eb6df0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+              <div id="mc_embed_signup_scroll">
+                <label for="mce-EMAIL"></label>
+                <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_f8f92538207e8a037eeafbb95_eea7eb6df0" tabindex="-1" value=""></div>
+                <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" 
+                  class="button btn btn-light" style='background: #F05945; color: white;'></div>
               </div>
-            </div>
+          </form>
           </div>
+          <a href='' type="button" class="" data-toggle="modal" data-target="#exampleModal">
+            Read our GDPR compliance statement here
+          </a>
           <!--End mc_embed_signup-->
 
         </div>
 
-          <!-- Projects -->
-          <div class="card-columns">
+        <!-- Modal -->
+        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Newsletter</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <h5>Terms and conditions</h5>
+                  You can unsubscribe at any time by clicking the link in the footer of our emails. For information about our privacy practices, please contact us.<br><br>
+                  We use Mailchimp as our marketing platform. By clicking below to subscribe, you acknowledge that your information will be transferred to Mailchimp for processing. <a href='https://mailchimp.com/legal/'>Learn more about Mailchimp's privacy practices here</a>.
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
 
-            <div class="jumbotron" style='width: 100%; color: black; border: 1px solid lightgrey;'>
-                <h1>Knowledge games catalogue</h1>
-                <h5>Browse a selection of knowledge games playable here or on partner sites such as EndCoronavirus.org and Itch.Io</h5>
+          <!-- Projects -->
+          <div class="card-columns">     
+
+            <div class="card my-4">      
+              <div class='card w-100' style='background: black;'>            
+                <h5 class="p-2 card-title lato d-flex align-items-center">
+                  <img class="icon-projects m-auto" src="img/mendel_logo.JPG" style='border-radius: 5px;'>
+                </h5>
+                <img class="card-img-top" src="img/mrg_promo.PNG" alt="Card image cap">
+              </div>
+              <div class="card-body">
+                <p class="card-text">
+                Contribute to ongoing genetic epidemiology research and understand the complexity of public health interventions.
+                  </p>
+                <a href="https://www.morenostok.io/mendel/game.html" target='_blank'><button type="button" class="btn btn-custom">Play here</button></a>
+              </div>
+              <div class="card-footer" style='background: #fff;'>
+                <small class="text-muted">Launched Q4 2020</small>
+                <img class="icon-sm" src="img/dynamicGenetics.png">
+              </div>
             </div>
 
             <div class="card my-4">
@@ -162,9 +187,27 @@
                 <small class="text-muted">Launched Q1 2021</small>
                 <img class="icon-xs" src="img/logo-dauntless-small.svg">
               </div>
+            </div>        
+
+            <div class="card my-4">    
+              <div class='w-100 card' style='background: #FFC700;'>         
+                <h5 class="p-2 card-title lato">
+                  <img class="icon-projects m-auto" src="img/logo-outbreak2.svg">
+                </h5>
+                <img class="card-img-top" src="img/logo-outbreak.png" alt="Card image cap">
+              </div>   
+              <div class="card-body">
+                <p class="p-2 card-text text-center">
+                  Explore the trade-off between public happiness and case numbers when managing the COVID-19 response.
+                </p>
+                <a href="https://outbreak.endcoronavirus.org" target='_blank'><button type="button" class="btn btn-custom">Play on endcornavirus.org</button></a>
+              </div>
+              <div class="card-footer">
+                <small class="text-muted">Launched Q1 2021 by a global team of EndCornavirus.org volunteers</small>
+                <img class="icon-sm" src="img/logo-ecv.png">
+              </div>
             </div>
 
-            
             <div class="card my-4">
               <h5 class="card-title d-flex align-items-center">
                 <img class="icon-projects m-auto" src="img/antivaxxgame_icon.PNG">
@@ -183,27 +226,6 @@
               <div class="card-footer">
                 <small class="text-muted">Launched Q1 2019 for RWB 2019</small>
                 <img class="icon-xs" src="img/logo-dauntless-small.svg">
-              </div>
-            </div>
-
-            
-
-            <div class="card my-4">    
-              <div class='w-100 card' style='background: #FFC700;'>         
-                <h5 class="p-2 card-title lato">
-                  <img class="icon-projects m-auto" src="img/logo-outbreak2.svg">
-                </h5>
-                <img class="card-img-top" src="img/logo-outbreak.png" alt="Card image cap">
-              </div>   
-              <div class="card-body">
-                <p class="p-2 card-text text-center">
-                  Explore the trade-off between public happiness and case numbers when managing the COVID-19 response.
-                </p>
-                <a href="https://outbreak.endcoronavirus.org" target='_blank'><button type="button" class="btn btn-custom">Play on endcornavirus.org</button></a>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Launched Q1 2021 by a global team of EndCornavirus.org volunteers</small>
-                <img class="icon-sm" src="img/logo-ecv.png">
               </div>
             </div>
 
@@ -231,41 +253,26 @@
               </div>
             </div>
 
-            <div class="card my-4">      
-              <div class='card w-100' style='background: black;'>            
-                <h5 class="p-2 card-title lato d-flex align-items-center">
-                  <img class="icon-projects m-auto" src="img/mendel_logo.JPG" style='border-radius: 5px;'>
-                </h5>
-                <img class="card-img-top" src="img/mrg_promo.PNG" alt="Card image cap">
-              </div>
-                <div class="card-body">
-                  <p class="card-text">
-                  Contribute to ongoing genetic epidemiology research and understand the complexity of public health interventions.
-                    </p>
-                  <a href="https://www.morenostok.io/mendel/game.html" target='_blank'><button type="button" class="btn btn-custom">Play here</button></a>
-                </div>
-                <div class="card-footer" style='background: #fff;'>
-                  <small class="text-muted">Launched Q4 2020</small>
-                  <img class="icon-sm" src="img/dynamicGenetics.png">
-                </div>
-              </div>
-
-            <div class="jumbotron d-flex flex-column justify-content-center align-items-center text-center" style='width: 100%; color: black; background: none !important; border: 1px solid lightgrey;'>
-                <img class="icon-brand m-auto" src="img/logo-dauntless.svg">
-                <p class='pt-2'>
-                    For more information on Dauntless R&D click <a href='https://www.morenostok.io/' target='_blank'>here</a>. Thank you to the support from:
-                </p>
-                <a href="https://www.bristol.ac.uk/" target="_blank"><img class="icon-promo m-auto p-2" src="img/uob.png"></a>
-                <a href="http://www.bristol.ac.uk/integrative-epidemiology/" target="_blank"><img class="icon-promo m-auto p-2" src="img/ieu.png"></a>
-                <a href="https://www.swdtp.ac.uk/" target="_blank"><img class="icon-promo m-auto p-2" src="img/esrcAndSwdtp.png"></a>
-                <a href="https://dynamicgenetics.org/" target="_blank"><img class="icon-promo m-auto p-2" src="img/dynamicGenetics.png"></a>
-
-            </div>
-
-            <div class="jumbotron" style='width: 400px; color: black; background: none !important;'>
-                            </div>
-
       </div> <!-- /card columns -->
+
+      
+
+      <div class="card my-4" style='border: none; background:none;'>
+        <div class="jumbotron d-flex flex-column justify-content-center align-items-center text-center" style='color: #5EAAA8; box-shadow: 0px 0px 2px lightgray; background: #F7F3E9;'>
+            <img class="icon-brand m-auto" src="img/logo-dauntless.svg">
+            <p class='pt-2'>
+                By Dauntless R&D. <a href='https://www.morenostok.io/' target='_blank'> For more information click here</a>. 
+                <br>
+                Made possible with the support from:
+            </p>
+            <div>            
+              <a href="https://www.bristol.ac.uk/" target="_blank"><img class="icon-promo m-auto p-2" src="img/uob.png"></a>
+              <a href="http://www.bristol.ac.uk/integrative-epidemiology/" target="_blank"><img class="icon-promo m-auto p-2" src="img/ieu.png"></a>
+              <a href="https://www.swdtp.ac.uk/" target="_blank"><img class="icon-promo m-auto p-2" src="img/esrcAndSwdtp.png"></a>
+              <a href="https://dynamicgenetics.org/" target="_blank"><img class="icon-promo m-auto p-2" src="img/dynamicGenetics.png"></a>
+            </div>
+        </div>
+      </div>
 
 
   <!-- Scripts -->
