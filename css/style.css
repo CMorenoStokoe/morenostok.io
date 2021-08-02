@@ -217,7 +217,7 @@ th,td{
 }
 
 /* Pulse animation (https://codepen.io/olam/pen/zcqea)*/ 
-.pulse {
+.navbarBtn {
     display: block;
     border-radius: 10px;
     background: #F05945;
@@ -225,6 +225,8 @@ th,td{
     cursor: pointer;
     color: #F7F3E9;
     box-shadow: 0 0 0 #A3D2CA;
+}
+.pulse {
     animation: pulse 2s infinite;
   }
   .pulse:hover {
