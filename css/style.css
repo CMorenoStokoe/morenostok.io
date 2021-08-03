@@ -217,7 +217,7 @@ th,td{
 }
 
 /* Pulse animation (https://codepen.io/olam/pen/zcqea)*/ 
-.navbarBtn {
+.btn-red {
     display: block;
     border-radius: 10px;
     background: #F05945;
