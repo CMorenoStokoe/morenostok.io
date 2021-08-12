@@ -1,36 +1,17 @@
-/*GLOBAL*/
+/* Theme */
+.btn-danger, .bg-danger {
+    background-color: #F05945;
+}
+.btn-info, .bg-info {
+    background-color: rgb(5, 161, 153);
+}
+
+/*Text*/
 *{
     font-family: 'Rajdhani', sans-serif;
 }
-body{
-    background-color: ghostwhite;
-}
-.centerTxts{
-    text-align: center;
-}
-.svg{
-    background-color: white;
-}
-#helpTable{
-    background-color: antiquewhite;
-    border-radius: 5px;
-}
-th,td{
-    padding: 5px;
-}
-.btn-custom{
-    background: rgb(5, 161, 153);
-    color: white;
-    font-weight: bold;
-    border-radius: 25px;
-}
-#mainImg{
-    max-width: 100%;
-    border-radius: 5px;
-}
-.dropdown{
-    margin-top: 10px;
-}
+
+/* Masonry */
 .card-columns {
     column-count: 1;
 }
@@ -55,117 +36,50 @@ th,td{
     }
 }
 
-/*HEAD*/
-.navbar-brand{
-    text-align:center;
-    color: ghostwhite !important;
+/* Sizing */
+.xs{
+    height: 25px;
+}
+.sm{
+    height: 50px;
+}
+.lg{
+    height: 75px;
+}
+.xl{
+    height: 100px;
 }
 
-.lato{
+/*Img sizing*/
+.img-xs{
+    width: auto;
+    height: 45px;
+    float: right;
 }
-
-.navbar-custom{
-    background-color: #021227;
-    border-bottom: 3px solid !important;
-    border-color: ghostwhite !important;
+.img-sm{
+    width: 80px;
+    height: auto;
+    float: right;
 }
-.socials{
-    color: ghostwhite;
-    font-size: 1rem;
-    padding: 10px;
-}
-.socialsLrg{
-    color: ghostwhite;
-    font-size: 1.5rem;
-    padding: 10px;
-}
-.socialsLrg:hover{
-    text-decoration: none; 
-    color: cadetblue;   
-}
-.socials:hover{
-    text-decoration: none;    
-    color: cadetblue;   
-}
-.dropdown-menu{
-    background-color: #2b333b;
-
-}
-
-#title{
-    margin-bottom: 0 !important;
-    padding: 0;
-}
-.spacer-50{
-    margin: 25px !important;
-}
-.spacer-50{
-    margin: 50px !important;
-}
-.spacer-5{
-    margin: 5px !important;
-}
-.icon-brand{
-    width:200px;
-}
-.card-deck-space-top{
-    margin-top: 50px !important;
-}
-.card-in-deck{
-    margin: 2rem !important;
-}
-.card-columns{
-    column-gap: 4rem !important;
-}
-.card-footer{
-    height: 60px !important;
-}
-
-/*FOOT*/
-.navbar-custom-foot{
-    background-color: white;
-    border-top: 1px solid !important;
-    border-color: cadetblue !important;
-}
-.icon-footer{
-    height: 40px;
-}
-.spacer-75{
-        margin: 75px !important;
-}
-.spacer-150{
-        margin: 150px !important;
-}
-.icon-promo{
+.img-md{
     height:60px;
-    border-radius: 5px;
 }
-.icon-projects{
+.icon-lg{
+    height:100px;
+}
+.img-full{
     max-width:100%;
     max-height:60px;
     height: auto;
 }
-.icon-affiliations{ 
+.img-responsive{ 
     max-width:230px;
     max-height:95px;
     width: auto;
     height: auto;
 }
-.icon-lrg{
-    height:100px;
-}
-.icon-sm{
-    width: 80px;
-    height: auto;
-    float: right;
-}
-.icon-xs{
-    width: auto;
-    height: 45px;
-    float: right;
-}
 
-/* Carousel icons */
+/* Carousel */
 .carousel-control-prev-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
 }
@@ -174,32 +88,15 @@ th,td{
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
 
-/* Epicon gallery */
-.epicon{
-    height: 75px;
-    width: 75px;
-}
-.epicon-div-gen4{
-    background-color: #666;
-    color: white;
-}
-.epicon-link{
-    
-}
-.nav-link:hover{
-    cursor: pointer !important;
-}
-
-/* Fancy gradient background (https://www.gradient-animator.com/)*/
-.wavy {
+/* Moving gradient backgrounds (https://www.gradient-animator.com/)*/
+.wavy-light {
     background: linear-gradient(136deg, #6c90f2, #24d6a5);
     background-size: 400% 400%;
 
-    -webkit-animation: AnimationName 23s ease infinite;
-    -moz-animation: AnimationName 23s ease infinite;
-    animation: AnimationName 23s ease infinite;
+    -webkit-animation: AnimationName 10s ease infinite;
+    -moz-animation: AnimationName 10s ease infinite;
+    animation: AnimationName 10s ease infinite;
 }
-
 @-webkit-keyframes AnimationName {
     0%{background-position:0% 50%}
     50%{background-position:100% 51%}
@@ -216,16 +113,31 @@ th,td{
     100%{background-position:0% 50%}
 }
 
-/* Pulse animation (https://codepen.io/olam/pen/zcqea)*/ 
-.btn-red {
-    display: block;
-    border-radius: 10px;
-    background: #F05945;
-    font-weight: 500;
-    cursor: pointer;
-    color: #F7F3E9;
-    box-shadow: 0 0 0 #A3D2CA;
+.wavy-dark {
+    background: linear-gradient(323deg, #000000, #1b6578);
+    background-size: 400% 400%;
+
+    -webkit-animation: AnimationName 15s ease infinite;
+    -moz-animation: AnimationName 15s ease infinite;
+    animation: AnimationName 15s ease infinite;
 }
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+@keyframes AnimationName {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+/* Pulse animation (https://codepen.io/olam/pen/zcqea)*/ 
 .pulse {
     animation: pulse 2s infinite;
   }
@@ -258,3 +170,27 @@ th,td{
         box-shadow: 0 0 0 0 rgba(204,169,44, 0);
     }
   }
+
+/* Glassmorphism (https://glassmorphism.com/) */
+.glassy {
+    background: rgba( 255, 255, 255, 0.4 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+}
+.glassy-white {
+    background: rgba( 255, 255, 255, 0.80 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 1.5px );
+    -webkit-backdrop-filter: blur( 1.5px );
+}
+.glassy-dark {
+    background: rgba( 4, 0, 0, 0.5 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4.5px );
+    -webkit-backdrop-filter: blur( 4.5px );
+}
+.glassy-border{
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}

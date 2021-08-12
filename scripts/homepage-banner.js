@@ -42,7 +42,7 @@ function animateBanner(){
         // Create node
         addNode({x:x,y:y}, 2+(Math.random()*5), 12000);
 
-    }, 500);
+    }, 750);
     
 }
 
@@ -92,10 +92,10 @@ function addNode(position={x:0,y:0}, size=5, interval=5000, id=`node${Math.floor
             .text(labels[Math.floor(Math.random()*labels.length)])
             .style("font-size", 2)
             .attr('text-anchor', 'center')
-            .style('text-shadow','0 0 3px black')
+            .style('text-shadow','0 0 3px white')
             .attr("x", position.x)
             .attr("y", position.y)
-            .attr('fill', 'ghostwhite')
+            .attr('fill', 'black')
             .style('opacity', 0)
             .transition()
             .duration(interval/3)

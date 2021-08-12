@@ -1,3 +1,3 @@
 function dismiss(){
-    document.getElementById('dismiss').style.display='none';
+    document.getElementById('dismiss').style.visibility='hidden';
 };
