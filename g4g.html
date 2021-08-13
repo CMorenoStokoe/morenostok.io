@@ -26,7 +26,7 @@
 
   </head>
     
-  <body class='wavy-dark'>
+  <body class='wavy-classy'>
 
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-none glassy-dark">
@@ -113,7 +113,8 @@
       </div>
     </div>
 
-    <!-- Splash -->      
+    <!-- Splash --> 
+    <div class="w-100 h-100 p-0 wavy-dark" style='z-index: -2; position: absolute; top:0; left:0'></div>     
     <div 
       class='jumbotron glassy w-100 h-100 d-flex flex-column justify-content-center align-items-center text-center'
       style='background: none; z-index: 1;'
@@ -128,7 +129,7 @@
         </h3> 
       </div>
       <a href="#welcome" type="button" class="mt-2 btn btn-danger btn-lg animate__animated animate__fadeIn animate__delay-1s">Enter</a>  
-    </div>
+    </div>    
 
     <!-- Content -->
     <div id='welcome'
@@ -137,229 +138,275 @@
       >
 
       <!-- Welcome -->
-      <div class="jumbotron glassy-white">  
-        <i class="fa-7x fas fa-microscope text-info"></i> 
-        <h1>Welcome! </h1>
-        <h5>
-          Games for good is a catalogue of knowledge games which are helping us understand public health 
-        </h5>
-        <small class="text-muted"><em> By Dauntless R&D de 2014 </em></small>
-      </div>
-
-      <!-- Mailing list reminder -->
-      <div class="card p-2 m-2 glassy-white" id='dismiss'>
-        <div class="card-body">
-          <h5 class="card-title">Hear about new projects first</h5>
+      <div class="card mb-4 glassy glassy-border"> 
+        <div class="card-body glassy-white glassy-border">
           <p class="card-text">
-            <button onclick="dismiss();" class='btn btn-light' style='border: none; background: none; position: absolute; top:5; right:5;'><strong>x</strong></button>
-            </p>
-          <a href='' type="button" data-toggle="modal" data-target="#exampleModal" class="btn btn-danger  pulse">Join our mailing list!</a>
-        </div>
-      </div>
-
-      <!-- Glass card -->
-      <div class="card text-center glassy glassy-border">
-        <div class="card-header text-white border-0 d-flex flex-row justify-content-between">
-          <h1>New project</h1>
-          <span class="badge badge-danger pulse">⦿ Live</span>
-        </div>
-        <div class="card-body bg-white glassy-border">
-          <h5 class="card-title">Learning network complexity through gameplay</h5>
-          <p class="card-text">
-            Can we suggest realistic solutions to problems in public health by playing a game? In this space-themed game players decisions are being analysed to understand whether gameplay can help us understand complex health data.
+            <i class="fa-7x fas fa-microscope text-info"></i> 
+            <h1>Welcome! </h1>
+            <h5>
+              Games for good is a catalogue of knowledge games which are helping us understand public health 
+            </h5>
+            <small class="text-muted"><em> By Dauntless R&D de 2014 </em></small>  
           </p>
-          <p class='text-muted'>Approved by the University of Bristol Psychological Science School Research Ethics Committee (ID: 111083)</p>
-          <a  class="btn btn-lg btn-info font-weight-bold shadow" href="#" role="button">
-            Play
-            <img class="icon-projects m-auto rounded xs" src="img/mendel_logo.JPG">
-          </a>
+        </div>
+        <div class="card-footer d-flex flex-row justify-content-between align-items-center border-0">
+          <strong class='text-white'>Made possible with support from:</strong>     
+          <a href="https://www.bristol.ac.uk/" target="_blank"><img class="sm m-auto p-2" src="img/uob.png"></a>
+          <a href="http://www.bristol.ac.uk/integrative-epidemiology/" target="_blank"><img class="sm m-auto p-2" src="img/ieu.png"></a>
+          <a href="https://www.swdtp.ac.uk/" target="_blank"><img class="sm m-auto p-2" src="img/esrcAndSwdtp.png"></a>
+          <a href="https://dynamicgenetics.org/" target="_blank"><img class="sm m-auto p-2" src="img/dynamicGenetics.png"></a>
         </div>
       </div>
+
+      <!-- Live projects -->
+      <h1 class='m-4 text-center text-white' id='current'>Current projects</h1>
+      <div class='row'>
+
+        <div class='col-sm-6 my-4'>
+          <div class="card glassy text-center glassy-border">
+            <div class="card-header text-white border-0 d-flex flex-row justify-content-between">
+              <h1>🔥</h1>
+              <span class="h-100 badge badge-danger pulse">⦿ Live</span>
+            </div>
+            <div class="card-body bg-white glassy-border">
+              <h3 class="card-title">Can we suggest solutions to real-world health problems by playing a game?</h3>
+              <p class="card-text">
+                Help us find out by playing this space-themed public health-solving puzzle game!
+                <a data-toggle="collapse" href="#details1" role="button">More details ▼</a>
+              </p>
+              <div class="card card-body collapse" id="details1">
+                The study "Learning network complexity through gameplay" was approved by the University of Bristol Psychological Science School Research Ethics Committee (ID: 111083)
+              </div>
+              <a class="m-2 btn btn-lg btn-info font-weight-bold shadow" href="#" role="button" style='border-radius: 20px;' target='_blank'>
+                Play
+                <img class="m-auto rounded xs" src="img/mendel_logo.JPG">
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class='col-sm-6 my-4'>
+          <div class="card glassy text-center glassy-border">
+            <div class="card-header text-white border-0 d-flex flex-row justify-content-between">
+              <h1>🔥</h1>
+              <span class="h-100 badge badge-danger pulse">⦿ Live</span>
+            </div>
+            <div class="card-body bg-white glassy-border">
+              <h3 class="card-title">How would you have managed the COVID-19 outbreak?</h3>
+              <p class="card-text">
+                Let us know by playing this 5 minute narrative adventure game which pits you as a policy maker!
+                <a data-toggle="collapse" href="#details2" role="button">More details ▼</a>
+              </p>
+              <div class="card card-body collapse" id="details2">
+                The game OutBreak was developed by a global team of volunteers at Endcoronavirus.org steered by Yaneer Bar-Yam. This game is being modified for use in an upcoming study based on the Nederlands.
+              </div>
+              <a class="m-2 btn btn-lg btn-info font-weight-bold shadow" href="https://outbreak.endcoronavirus.org" role="button" style='border-radius: 20px;' target='_blank'>
+                Play
+                <img class="m-auto rounded xs" src="img/logo-outbreak2.svg">
+              </a>
+            </div>
+          </div>
+        </div>
       
-
-      <!-- News -->
-      <h1 class='text-center text-white' id='current'>News</h1>
+      </div> <!-- /row -->
+    
+      <!-- All projects -->
+      <h1 class='m-4 text-center text-white' id='current'>All projects</h1>
       <div class="card-columns pt-4"> 
 
-        <div class="jumbotron my-4">     
-          <h5 class="p-2 lato d-flex align-items-center">
-            What are knowledge games?
-          </h5>
-          <p>
-            "Knowledge games produce knowledge, solve problems, or generate new possibilities for real-world change"
-          </p>
-          <small class="text-muted"><em>- Karen Schrier, Knowledge Games, 2016</em></small>
-        </div>
-        
-        <div class="card m-4 p-3 border-white" style='position: relative; max-width: 20rem;'>
-          <span class="badge badge-danger pulse" style='position: absolute; top:-10; right:-10;'>⦿ Live</span>
-          <p class="rounded">    
-          </p>
-          <a class="card-footer btn btn-light btn-lg w-100" href="https://www.morenostok.io/mendel/game.html" role="button" style='color: #F7F3E9; background: #5EAAA8; border-radius: 0px 0px 10px 10px;'>
-            Play
-          </a>
-        </div>
-        
-        <div class="card m-4 p-3 border-white" style='position: relative; max-width: 20rem;'>
-          <p class="rounded" style='max-width: 20rem;'>    
-            The decisions that OutBreak players make in response to the COVID-19 pandemic are being recorded as part of an upcoming project investigating decision making based in the Netherlands
-          </p>
-          <a class="btn btn-light btn-lg w-100" href="https://outbreak.endcoronavirus.org" role="button" style='color: #F7F3E9; background: #5EAAA8; border-radius: 0px 0px 10px 10px;'>
-            Play
-            <img class="icon-projects m-auto rounded" src="img/logo-outbreak2.svg" style='height: 25px; width: auto;'>
-          </a>
-        </div>
-
-        <div class="card my-4" style='background: #e9ecef;'>      
-          <div class='card w-100' style='background: black;'>            
-            <h5 class="p-2 card-title lato d-flex align-items-center text-white">
-              What do we need?
-            </h5>
-          </div>
+        <div class="jumbotron p-2 m-2 glassy-white" id='dismiss'><!-- Mailing list reminder -->
           <div class="card-body">
-            <p>
-              Publicity! Hear about new projects by 
-              <a href='#jambo'>signing up to our mailing list</a>, or getting the word out on <strong class='pulse' style='color: cadetblue;'>social media</strong>!
-            </p>
-          </div>
-          <div class="card-footer" style='background: #fff;'>
-            <a href='#jambo'>Sign up to our mailing list</a>
+            <h5 class="card-title">Interested? Let us keep you up to date</h5>
+            <p class="card-text">
+              Hear about new projects first!
+              <button onclick="dismiss();" class='btn btn-light' style='border: none; background: none; position: absolute; top:5; right:5;'><strong>x</strong></button>
+              </p>
+            <a href='' type="button" data-toggle="modal" data-target="#exampleModal" class="btn btn-danger  pulse">Join our mailing list!</a>
           </div>
         </div>
 
-      </div>
-
-      <!-- Games -->
-      <div class="card-columns pt-4"> 
-
-        <div class="card my-4">      
-          <div class='card' style='background: black;'>            
-            <h5 class="p-2 card-title lato d-flex align-items-center">
-              <img class="icon-projects m-auto" src="img/mendel_logo.JPG" style='border-radius: 5px;'>
-            </h5>
-            <img class="card-img-top" src="img/mrg_promo.PNG" alt="Card image cap">
+        <div class="card my-4 glassy"> 
+          <div class='card-title rounded-top glassy mb-0' style='background: rgba(0, 0, 0, 0.9);'>            
+            <img class="sm rounded-top" src="img/mendel_logo.JPG">
           </div>
-          <div class="card-body">
+          <img class="card-img-top" src="img/mrg_promo.PNG" alt="Card image cap">
+          <div class="card-body glassy-white">
             <p class="card-text">
             Contribute to ongoing genetic epidemiology research and understand the complexity of public health interventions.
               </p>
-            <a href="https://www.morenostok.io/mendel/game.html" target='_blank'><button type="button" class="btn btn-custom">Play here</button></a>
+            <a class='btn btn-info' href="https://www.morenostok.io/mendel/game.html" target='_blank'>Play here</a>
           </div>
-          <div class="card-footer" style='background: #fff;'>
-            <small class="text-muted">Launched Q4 2020</small>
-            <img class="icon-sm" src="img/dynamicGenetics.png">
+          <div class="card-footer d-flex flex-row justify-content-between align-items-center">
+            <img class="xs" src="img/dynamicGenetics.png"> 2020
           </div>
         </div>
 
-        <div class="card my-4">
-          <div class='card' style='background: #DC3545;'>         
+        <div class="card my-4 glassy">
+          <div class='card-title rounded-top glassy mb-0' style='background: rgba(220, 53, 69, 0.9);'>         
             <h5 class="p-2 card-title lato">
-              <img class="icon-projects m-auto" src="img/covid19antivaxx_icon.svg">
+              <img class="sm rounded-top m-auto" src="img/covid19antivaxx_icon.svg">
             </h5>
             <img class="card-img-top" src="img/antimask-game.gif" alt="Card image cap" style='background: white;'>
           </div>   
-          <div class="card-body">
+          <div class="card-body glassy-white">
             <p class="card-text">
               Shows how not getting vaccinated contributes to COVID-19 spread.
             </p>
-            <em>Part of the 'Anti-Vaxx' puzzle micro-game series</em><br>
+            <em>Part of the 'Anti-Vaxx' puzzle micro-game series</em>
             <p class='p-2'>
               <a href="http://www.bristol.ac.uk/neuroscience/events/2021/research-without-borders.html" target="_blank">
                 <i class="fas fa-calendar-check"></i> Featured in the Research Without Borders 2021 showcase 
               </a> 
             </p>     
-            <a href="COVID-19/VaccineGame/"><button type="button" class="btn btn-custom">Play here</button></a>
-            <a href="https://cmorenostokoe.itch.io/covid-19-anti-vaxx" target='_blank'><button type="button" class="btn btn-custom">Play on Itch.io</button></a>
+            <a href="COVID-19/VaccineGame/"><button type="button" class="btn btn-info">Play here</button></a>
+            <a href="https://cmorenostokoe.itch.io/covid-19-anti-vaxx" target='_blank'><button type="button" class="btn btn-info">Play on Itch.io</button></a>
           </div>
-          <div class="card-footer">
-            <small class="text-muted">Launched Q1 2021</small>
-            <img class="icon-xs" src="img/logo-dauntless-small.svg">
+          <div class="card-footer d-flex flex-row justify-content-between align-items-center">
+            <img class="xs" src="img/logo-dauntless-small.svg"> 2020
           </div>
         </div>        
 
-        <div class="card my-4">
-          <h5 class="card-title d-flex align-items-center">
-            <img class="icon-projects m-auto" src="img/antivaxxgame_icon.PNG">
+        <div class="card my-4 glassy">
+          <h5 class='card-title rounded-top glassy mb-0' style='background: rgba(360, 360, 360, 0.9);'>
+            <img class="sm m-auto rounded-top" src="img/antivaxxgame_icon.PNG">
           </h5>
           <img class="card-img-top" src="img/antivaxxgame_promo.PNG" alt="Card image cap">
-          <div class="card-body">
+          <div class="card-body glassy-white">
             <p class="card-text">
               Prototype micro-game using puzzle gameplay to show how vaccinations prevent disease spread. Produced for
               <a href="http://www.bris.ac.uk/doctoral-college/current-research-students/events-and-opportunities/research-without-borders/2019/" target="_blank">
                 Research Without Borders 2019 <i class="fas fa-calendar-check"></i> 
               </a>
-            </p>
-            <em>Part of the 'Anti-Vaxx' puzzle micro-game series</em><br>
-            <a href="antivaxx/index.html"><button type="button" class="btn btn-custom">Play here</button></a>
+            </p>     
+            <a href="antivaxx/index.html"><button type="button" class="btn btn-info">Play here</button></a>
           </div>
-          <div class="card-footer">
-            <small class="text-muted">Launched Q1 2019 for RWB 2019</small>
-            <img class="icon-xs" src="img/logo-dauntless-small.svg">
+          <div class="card-footer d-flex flex-row justify-content-between align-items-center">
+            <img class="xs" src="img/logo-dauntless-small.svg"> 2019
           </div>
         </div>
 
-        <div class="card my-4">    
-          <div class='card' style='background: #FFC700;'>         
+        <div class="card my-4 glassy">    
+          <div class='card-title rounded-top glassy mb-0' style='background: rgba(255, 199, 0, 0.9);'>         
             <h5 class="p-2 card-title lato">
-              <img class="icon-projects m-auto" src="img/logo-outbreak2.svg">
+              <img class="sm m-auto rounded-top" src="img/logo-outbreak2.svg">
             </h5>
             <img class="card-img-top" src="img/logo-outbreak.png" alt="Card image cap">
           </div>   
-          <div class="card-body">
+          <div class="card-body glassy-white">
             <p class="p-2 card-text text-center">
               Explore the trade-off between public happiness and case numbers when managing the COVID-19 response.
             </p>
-            <a href="https://outbreak.endcoronavirus.org" target='_blank'><button type="button" class="btn btn-custom">Play on endcornavirus.org</button></a>
+            <a href="https://outbreak.endcoronavirus.org" target='_blank'><button type="button" class="btn btn-info">Play on endcornavirus.org</button></a>
           </div>
-          <div class="card-footer">
-            <small class="text-muted">Launched Q1 2021 by a global team of EndCornavirus.org volunteers</small>
-            <img class="icon-sm" src="img/logo-ecv.png">
+          <div class="card-footer d-flex flex-row justify-content-between align-items-center">
+            <img class="xs" src="img/logo-ecv.png"> 2021
           </div>
         </div>
 
-        <div class="card my-4">
-          <div class='card' style='background: #6CB6A9;'>
+        <div class="card my-4 glassy">
+          <div class='card-title rounded-top glassy mb-0' style='background: rgba(108, 182, 169, 0.9);'>
             <h5 class="p-2 card-title lato d-flex align-items-center">
-              <img class="icon-projects m-auto" src="img/antimask-game-icon.jpg" style='border-radius: 5px;'>
+              <img class="sm m-auto" src="img/antimask-game-icon.jpg" style='border-radius: 5px;'>
             </h5>
             <img class="card-img-top" src="img/antimask-game.gif" alt="Card image cap" style='background: white;'>
           </div>
-          <div class="card-body">
-            <p class="card-text">Shows how not wearing a mask helps COVID-19 spread. </p>
-            <em>Part of the 'Anti-Vaxx' puzzle micro-game series</em><br>
-            <p class='p-2'>
-              <a href="http://www.bristol.ac.uk/neuroscience/events/2021/research-without-borders.html" target="_blank">
-                <i class="fas fa-calendar-check"></i> Featured in the Research Without Borders 2021 showcase 
-              </a> 
-            </p>                
-            <a href="WearAMask/"><button type="button" class="btn btn-custom">Play here</button></a>
-            <a href="https://steelcry03.itch.io/anti-mask" target='_blank'><button type="button" class="btn btn-custom">Play on Itch.io</button></a>
+          <div class="card-body glassy-white">
+            <p class="card-text">Shows how not wearing a mask helps COVID-19 spread. </p>  
+            <a href="WearAMask/"><button type="button" class="btn btn-info">Play here</button></a>
+            <a href="https://steelcry03.itch.io/anti-mask" target='_blank'><button type="button" class="btn btn-info">Play on Itch.io</button></a>
           </div>
-          <div class="card-footer">
-            <small class="text-muted">Launched Q3 2020 for RWB 2021</small>
-            <img class="icon-xs" src="img/logo-dauntless-small.svg">
+          <div class="card-footer d-flex flex-row justify-content-between align-items-center">
+            <img class="xs" src="img/logo-dauntless-small.svg"> 2020
           </div>
         </div>
 
-      </div> <!-- /card columns -->
+      </div> <!-- /card columns --> 
 
-      <!-- Acknowledgements -->
-      <div class="card my-4" style='border: none; background:none;'>
-        <div class="jumbotron d-flex flex-column justify-content-center align-items-center text-center" style='color: #5EAAA8; box-shadow: 0px 0px 2px lightgray; background: #F7F3E9;'>
-            <img class="icon-brand m-auto" src="img/logo-dauntless.svg">
-            <p class='pt-2'>
-                By Dauntless R&D. <a href='https://www.morenostok.io/' target='_blank'> For more information click here</a>. 
-                <br>
-                Made possible with the support from:
-            </p>
-            <div>            
-              <a href="https://www.bristol.ac.uk/" target="_blank"><img class="icon-promo m-auto p-2" src="img/uob.png"></a>
-              <a href="http://www.bristol.ac.uk/integrative-epidemiology/" target="_blank"><img class="icon-promo m-auto p-2" src="img/ieu.png"></a>
-              <a href="https://www.swdtp.ac.uk/" target="_blank"><img class="icon-promo m-auto p-2" src="img/esrcAndSwdtp.png"></a>
-              <a href="https://dynamicgenetics.org/" target="_blank"><img class="icon-promo m-auto p-2" src="img/dynamicGenetics.png"></a>
-            </div>
-        </div>
+      <!-- What are knowledge games? -->
+      <div class="jumbotron w-100 my-4">     
+        <h1 class="p-2 lato d-flex align-items-center">What are knowledge games?</h1>
+        <p>"Knowledge games produce knowledge, solve problems, or generate new possibilities for real-world change"</p>
+        <small class="text-muted"><em>- Karen Schrier, Knowledge Games, 2016</em></small>
       </div>
+
+      <!-- Impact -->      
+      <div class="jumbotron w-100 my-4">     
+        <h1 class="p-2 lato d-flex align-items-center">What impact have these games had?</h1>
+        <p>
+          While these games are designed to investigate the potential future uses of games, they have had some impact already.
+        </p>
+      </div>
+    
+      <div class="jumbotron w-100 my-4 glassy">     
+        <h1 class="p-2 lato d-flex align-items-center">Coronavirus</h1>
+        <div class='d-flex flex-row'>
+
+          <div class='card m-2 glassy-white'>
+            <img class='card-img-top' src='promo/rwb2021.png'>
+            <div class='card-body'>
+              OutBreak, Anti-Mask and Anti-Vaxx: COVID-19 edition were featured in the 
+              <a href="http://www.bristol.ac.uk/neuroscience/events/2021/research-without-borders.html" target="_blank">
+                Research Without Borders 2021 showcase 
+              </a> 
+              <small class='text-muted'>Image @Remo</small>
+            </div>
+          </div>
+    
+          <div class='card m-2 glassy-white'>
+            <div class='card-body'>
+              A global team of volunteers developed and launched OutBreak on the 
+              <a href='www.endcoronavirus.org' target='_blank'>EndCoronaVirus.org</a>
+              website
+              <br>
+              <a href='www.endcoronavirus.org'>
+                <i class="fa-2x fas fa-globe text-danger"></i>
+              </a>
+              <a href='https://twitter.com/endCOVID19/status/1379859211731996675'>
+                <i class="fa-2x fab fa-twitter text-info"></i>
+              </a>
+            </div>  
+            <div class='card-footer'>
+
+            </div>
+          </div>
+    
+          <div class='card m-2 glassy-white'>
+            <div class='card-body'>
+              <i class="fa-4x fas fa-globe"></i>
+              Knowledge games featured on the MRC Integrative Epidemiology Unit's website
+              <a class='mt-2 btn btn-dark shadow' href='https://www.bristol.ac.uk/integrative-epidemiology/engagement/#dropdown-heading0-3'>Link to website</a>
+            </div>
+          </div>
+        </div>
+      
+      </div>
+
+      <div class="jumbotron w-100 my-4 glassy">     
+        <h1 class="p-2 lato d-flex align-items-center">Anti-vaccination </h1>
+        <div class='d-flex flex-row'>       
+
+          <div class='card my-2'>
+            <i class="fa-4x fas fa-calendar-check"></i> 
+            <img class='card-img-top' src='promo/rwb2019.png'>
+            <div class='card-body'>
+              <a href="https://www.bristol.ac.uk/doctoral-college/current-research-students/events-and-opportunities/research-without-borders/2019/" target="_blank">
+                The Anti-Vaxx series of micro-puzzle games were first developed and unveiled at the Research Without Borders 2019 public engagement festival
+              </a> 
+            </div> 
+          </div>
+
+      </div>
+      
+
+      <!-- Credit card -->
+      <div class="my-2 jumbotron d-flex flex-column justify-content-center align-items-center text-center">
+          <img class="x2 m-auto" src="img/logo-dauntless.svg">
+          <p class='pt-2'>
+              By Dauntless R&D. <a href='https://www.morenostok.io/' target='_blank'> For more information click here</a>. 
+          </p>
+      </div>
+
+
 
     </div> <!-- /Container -->
 
