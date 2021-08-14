@@ -42,7 +42,7 @@
       <div class="collapse navbar-collapse navbar-light" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item p-3 my-auto">
-            <a class="nav-link" href="#current" style='position: relative;'>
+            <a class="nav-link" href="#activeProjects" style='position: relative;'>
               Active projects
               <span 
                 class='navbar-expand badge badge-pill badge-danger pulse text-white'
@@ -53,12 +53,18 @@
             </a>
           </li>
           <li class="nav-item my-auto">
-            <a class="nav-link" href="" type="button" data-toggle="modal" data-target="#exampleModal">Join our mailing list</a>
+            <a class="nav-link" href="#allProjects" type="button">All projects</a>
+          </li>
+          <li class="nav-item my-auto">
+            <a class="nav-link" href="#impact" type="button">Impact</a>
+          </li>
+          <li class="nav-item my-auto">
+            <a class="nav-link" href="#knowledgeGames" type="button">About</a>
           </li>
         </ul>
         <ul class="navbar-nav ml-auto">
           <li class="nav-item my-auto">
-            <a class="nav-link" href="https://www.morenostok.io/">By Dauntless R&D</a>
+            <a class="nav-link" href="" type="button" data-toggle="modal" data-target="#exampleModal">Join our mailing list</a>
           </li>
         </ul>
       </div>
@@ -153,7 +159,7 @@
         </div>
         <div class="card-footer border-0">
           <p>Made possible with support from:</p>
-          <div class='d-flex flex-row justify-content-between align-items-center '>
+          <div id='activeProjects' class='d-flex flex-row justify-content-between align-items-center '>
             <a href="https://www.bristol.ac.uk/" target="_blank"><img class='mh-60 p-1' src="img/uob.png"></a>
             <a href="http://www.bristol.ac.uk/integrative-epidemiology/" target="_blank"><img class='mh-60 p-1' src="img/ieu.png"></a>
             <a href="https://www.swdtp.ac.uk/" target="_blank"><img class='mh-60 p-1' src="img/esrcAndSwdtp.png"></a>
@@ -204,7 +210,7 @@
               <div class="card card-body collapse" id="details2">
                 The game OutBreak was developed by a global team of volunteers at Endcoronavirus.org steered by Yaneer Bar-Yam. This game is being modified for use in an upcoming study based on the Nederlands.
               </div>
-              <a class="m-2 btn btn-lg btn-info font-weight-bold shadow" href="#game-outbreak" role="button" style='border-radius: 20px;'>
+              <a id='allProjects' class="m-2 btn btn-lg btn-info font-weight-bold shadow" href="#game-outbreak" role="button" style='border-radius: 20px;'>
                 Show me 
                 <img class="m-auto rounded xs" src="img/logo-outbreak2.svg">
               </a>
@@ -328,9 +334,10 @@
         </div>
 
       </div> <!-- /card columns --> 
+      <span id='impact' class='mb-5'></span>
 
       <!-- Impact -->      
-      <h1 class="p-2 text-center w-100 text-white">Impact</h1>
+      <h1 class="mt-5 p-2 text-center w-100 text-white">Impact</h1>
       <div class='row'>
     
         <div class='col-sm-6'>
@@ -404,9 +411,10 @@
         </div> <!-- /col -->
 
       </div> <!-- /row -->
+      <span id='knowledgeGames' class='mb-5'></span>
 
       <!-- What are knowledge games? -->
-      <h1 class="p-2 text-center w-100 text-white">Template knowledge games</h1>
+      <h1 class="mt-5 p-2 text-center w-100 text-white">Template knowledge games</h1>
       <div class='card-columns'>
 
         <div class="card m-2 p-4 text-center">     
