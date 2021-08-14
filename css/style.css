@@ -117,12 +117,12 @@
     animation: GradientAnimation 6s ease infinite;
 }
 .wavy-classy {
-    background: linear-gradient(323deg, #119e6a, #00a0b5);
+    background: linear-gradient(323deg, #119e74, #00a0b5);
     background-size: 400% 400%;
 
-    -webkit-animation: AnimationName 12s ease infinite;
-    -moz-animation: AnimationName 12s ease infinite;
-    animation: AnimationName 12s ease infinite;
+    -webkit-animation: GradientAnimation 15s ease infinite;
+    -moz-animation: GradientAnimation 15s ease infinite;
+    animation: GradientAnimation 15s ease infinite;
 }
 .wavy-dark {
     background: linear-gradient(323deg, #000000, #1b6578);
@@ -148,56 +148,63 @@
     100%{background-position:0% 50%}
 }
 
-/* Pulse animation (https://codepen.io/olam/pen/zcqea)*/ 
+/* Pulse animations (https://codepen.io/olam/pen/zcqea)*/ 
+.fire {
+    animation: glow 1s infinite alternate;
+}
+@keyframes glow {
+    to {
+        text-shadow: 0 0 12px rgb(255, 196, 0);
+    }
+}
+.fire:hover {
+    animation: none;
+}
 .pulse {
     animation: pulse 2s infinite;
-  }
+}
 .pulse:hover {
     animation: none;
 }
-  
 @-webkit-keyframes pulse {
-0% {
-    -webkit-box-shadow: 0 0 0 0 #A3D2CA;
-}
-70% {
-    -webkit-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
-}
-100% {
-    -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
-}
+    0% {
+        -webkit-box-shadow: 0 0 0 0 #A3D2CA;
+    }
+    70% {
+        -webkit-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+    }
+    100% {
+        -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    }
 }
 @keyframes pulse {
-0% {
-    -moz-box-shadow: 0 0 0 0 #A3D2CA;
-    box-shadow: 0 0 0 0 #A3D2CA;
-}
-70% {
-    -moz-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
-    box-shadow: 0 0 0 10px rgba(204,169,44, 0);
-}
-100% {
-    -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
-    box-shadow: 0 0 0 0 rgba(204,169,44, 0);
-}
+    0% {
+        -moz-box-shadow: 0 0 0 0 #A3D2CA;
+        box-shadow: 0 0 0 0 #A3D2CA;
+    }
+    70% {
+        -moz-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+        box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+    }
+    100% {
+        -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+        box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+    }
 }
 
 /* Glassmorphism (https://glassmorphism.com/) */
 .glassy {
     background: rgba( 255, 255, 255, 0.4 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4px );
     -webkit-backdrop-filter: blur( 4px );
 }
 .glassy-white {
     background: rgba( 255, 255, 255, 0.80 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 1.5px );
     -webkit-backdrop-filter: blur( 1.5px );
 }
 .glassy-dark {
     background: rgba( 4, 0, 0, 0.5 );
-    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 4.5px );
     -webkit-backdrop-filter: blur( 4.5px );
 }
