@@ -117,7 +117,7 @@
     animation: GradientAnimation 6s ease infinite;
 }
 .wavy-classy {
-    background: linear-gradient(323deg, #119e74, #00a0b5);
+    background: linear-gradient(323deg, #14b89c, #007cb5);
     background-size: 400% 400%;
 
     -webkit-animation: GradientAnimation 15s ease infinite;
