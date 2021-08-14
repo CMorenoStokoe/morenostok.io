@@ -62,6 +62,13 @@
     height: 400px;
 }
 
+.mh-60{
+    max-width:100%;
+    max-height: 60px;
+    width: auto;
+    height: auto;
+}
+
 /*Img sizing*/
 .img-xs{
     width: auto;

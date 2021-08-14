@@ -66,7 +66,7 @@
 
     <!-- BG -->
     <div id='banner' class="w-100 h-100 p-0 fixed-top" style='z-index:-1;'>
-      <svg height='600' width='800' id="svg-intro" class='m-0 p-0'></svg>
+      <svg height='100%' width='100%' id="svg-intro" class='m-0 p-0'></svg>
     </div>
 
     <!-- Modal -->
@@ -133,12 +133,12 @@
 
     <!-- Content -->
     <div id='welcome'
-      class='container d-flex flex-column align-items-center justify-content-center' 
+      class='p-5 container d-flex flex-column align-items-center justify-content-center' 
       style='padding-top: 6rem;'
       >
 
       <!-- Welcome -->
-      <div class="card mb-4 glassy glassy-border"> 
+      <div class="card mb-4 glassy glassy-border" style='max-width: 100%;'> 
         <div class="card-body glassy-white glassy-border">
           <p class="card-text">
             <i class="fa-7x fas fa-microscope text-info"></i> 
@@ -149,12 +149,14 @@
             <small class="text-muted"><em> By Dauntless R&D de 2014 </em></small>  
           </p>
         </div>
-        <div class="card-footer d-flex flex-row justify-content-between align-items-center border-0">
-          <strong class='text-white'>Made possible with support from:</strong>     
-          <a href="https://www.bristol.ac.uk/" target="_blank"><img class="sm m-auto p-2" src="img/uob.png"></a>
-          <a href="http://www.bristol.ac.uk/integrative-epidemiology/" target="_blank"><img class="sm m-auto p-2" src="img/ieu.png"></a>
-          <a href="https://www.swdtp.ac.uk/" target="_blank"><img class="sm m-auto p-2" src="img/esrcAndSwdtp.png"></a>
-          <a href="https://dynamicgenetics.org/" target="_blank"><img class="sm m-auto p-2" src="img/dynamicGenetics.png"></a>
+        <div class="card-footer border-0">
+          <p>Made possible with support from:</p>
+          <div class='d-flex flex-row justify-content-between align-items-center '>
+            <a href="https://www.bristol.ac.uk/" target="_blank"><img class='mh-60 p-1' src="img/uob.png"></a>
+            <a href="http://www.bristol.ac.uk/integrative-epidemiology/" target="_blank"><img class='mh-60 p-1' src="img/ieu.png"></a>
+            <a href="https://www.swdtp.ac.uk/" target="_blank"><img class='mh-60 p-1' src="img/esrcAndSwdtp.png"></a>
+            <a href="https://dynamicgenetics.org/" target="_blank"><img class='mh-60 p-1' src="img/dynamicGenetics.png"></a>
+          </div>
         </div>
       </div>
 
@@ -228,8 +230,8 @@
         <div class="card my-4 glassy"> 
           <div class='card-title rounded-top glassy mb-0' style='background: rgba(0, 0, 0, 0.9);'>            
             <img class="sm rounded-top" src="img/mendel_logo.JPG">
+            <video class="card-img-top" src="promo/video-mendel.mp4" alt="Card image cap"  type="video/mp4" autoplay muted>
           </div>
-          <img class="card-img-top" src="img/mrg_promo.PNG" alt="Card image cap">
           <div class="card-body glassy-white">
             <p class="card-text">
             Contribute to ongoing genetic epidemiology research and understand the complexity of public health interventions.
@@ -290,10 +292,8 @@
 
         <div class="card my-4 glassy">    
           <div class='card-title rounded-top glassy mb-0' style='background: rgba(255, 199, 0, 0.9);'>         
-            <h5 class="p-2 card-title lato">
-              <img class="sm m-auto rounded-top" src="img/logo-outbreak2.svg">
-            </h5>
-            <img class="card-img-top" src="img/logo-outbreak.png" alt="Card image cap">
+            <img class="sm m-auto rounded-top" src="img/logo-outbreak2.svg">
+            <video class="card-img-top" src="promo/video-outbreak.mp4" alt="Card image cap"  type="video/mp4" autoplay muted>
           </div>   
           <div class="card-body glassy-white">
             <p class="p-2 card-text text-center">
@@ -333,7 +333,7 @@
     
         <div class='col-sm-6'>
           <div class="jumbotron my-4 glassy">     
-          <h5 class="p-2 font-weight-bold">Coronavirus</h5>
+          <h5 class="p-2 font-weight-bold">2020-2021: Coronavirus</h5>
 
             <div class='card m-2 glassy'>
               <img class='card-img-top' src='promo/rwb2021.png'>
@@ -383,7 +383,7 @@
 
         <div class='col-sm-6'>
           <div class="jumbotron my-4 glassy">     
-          <h5 class="p-2 font-weight-bold">Anti-vaccination myth busting</h5>
+          <h5 class="p-2 font-weight-bold">2019: Anti-vaccination myth busting</h5>
 
             <div class='card m-2 glassy' style='max-width: 300px;'>
               <img class='card-img-top' src='promo/rwb2019.png'>
@@ -414,7 +414,7 @@
       <div class="my-2 w-100 jumbotron d-flex flex-column justify-content-center align-items-center text-center">
         <img class="x2 m-auto" src="img/logo-dauntless.svg">
         <p class='pt-2'>
-            Dauntless R&D is a trade name under which digital health services have been traded since 2014.<a href='https://www.morenostok.io/' target='_blank'> For more information click here</a>. 
+            Dauntless R&D is a trade name under which digital health services have been traded since 2014.<a href='https://www.morenostok.io/' target='_blank'> For more information click here</a>.  
         </p>
       </div>
 

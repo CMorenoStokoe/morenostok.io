@@ -8,12 +8,13 @@ animateBanner();
 // Function to animate the welcome banner
 function animateBanner(){
     
-    // Set SVG height to fill window container
+    /* Set SVG height to fill window container
     svgContainerHeight = document.getElementById('banner').offsetHeight;
         document.getElementById('svg-intro').setAttribute('height', svgContainerHeight);
     svgContainerWidth = document.getElementById('banner').offsetWidth;
         document.getElementById('svg-intro').setAttribute('width', svgContainerWidth);
-
+    (disabled for mobile compatiability)*/
+    
     // Select SVG DOM element
     const svg = d3.select('#svg-intro'),
         width = +svg.attr("width"),
