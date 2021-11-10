@@ -1,0 +1,93 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- Font awesome icons -->
+    <link rel="stylesheet" href="css/all.css">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+       *{font-family: "Roboto", sans-serif;}
+    </style>
+    
+    <title>MR software list</title>
+    <link rel="icon" href="img/dauntless3_icon.png" type="image/x-icon"/>
+  </head>
+    
+<body>    
+  <nav class='navbar fixed-top navbar-light bg-light border-bottom'>
+    <h1>MR software list</h1>   
+    <a class='nav-link' href='#search'>Collection 1: Systematic search</a>
+    <a class='nav-link' href='#mrcpage'>Collection 2: MRC IEU GitHub</a>
+    <a class='nav-link' href='#article'>Collection 3: Article in-review</a>
+    <button type='button' class='btn btn-success' onclick='$("#filters").toggle();'>Filters <i class="fas fa-angle-double-down"></i></button>
+  
+    <div id='filters' style='display: none;' class='m-2 p-2'>
+      <h5>Filters</h5>
+      <div class='d-flex flex-row align-items-center'>
+        <p>Language:</p>
+        <div class='p-2'>
+          <input type="checkbox" name="lang" id='lang-r' value="r" onclick="filterList('language', 'r')">
+          <label for="lang-r">R</label>
+        </div>
+        <div class='p-2'>
+          <input type="checkbox" name="lang-java' value="javascript" onclick="filterList('language', 'java')">
+          <label for="lang-java">JavaScript</label>
+        </div>
+        <div class='p-2'>
+          <input type="checkbox" name="lang-py' value="py" onclick="filterList('language', 'py')">
+          <label for="lang-py">Python</label>
+        </div>
+        <div class='p-2'>
+          <input type="checkbox" name="lang-web' value="web" onclick="filterList('language', 'web')">
+          <label for="lang-web">Websites</label>
+        </div>
+      </div>
+      <div class='d-flex flex-row align-items-center'>
+        Visualisation abilities:
+        <div class='p-2'>
+          <input type="checkbox" name="vis-yes' value="yes" onclick="filterList('visualisation', '1')">
+          <label for="vis-yes">Has visualisation capabilities</label>
+        </div>
+      </div>
+      <div>
+        <button class='btn btn-success' onclick='generateList()'>Filter</button>
+      </div>
+    </div>
+  
+  </nav>
+
+  <div class='p-5'></div>
+
+  <div class='container'>
+    <h5 class='m-2' id='search'>Systematic search results (@<a href='https://www.morenostok.io/'>cmorenostokoe</a>)</h5>
+    <div id='mrsoftwarelist' class='card-columns'></div>
+    <h5 class='m-2' id='mrcpage'>MRC IEU GitHub page (<a href='https://mrcieu.github.io/'>link</a>)</h5>
+    <iframe src="https://mrcieu.github.io/" class='m-2' title="MRC IEU GitHub page" style='width:100%; height: 800px;'></iframe>
+    <br>
+    <div class='p-4'></div>
+    <h5 class='m-2' id='article'>Article in review</h5>
+    <p>
+      Additionally, while it is not currently published (A/O 11/2021) it is worth noting that a list of MR software will be appended to an article in review:
+      Sanderson E, Glymour M, Holmes MV, Kang H, Morrison J, Munafo M, Palmer T, Schooling CM, Wallace C, Zhao Q, Davey Smith G. Mendelian randomization. Nature Methods Reviews Primers. Under review.
+    </p>
+  </div>
+
+
+  <!-- Scripts -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="scripts/mrsoftwarelist.js"></script> <!-- Software list -->
+  
+</body>
+    
+</html>
