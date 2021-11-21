@@ -11,214 +11,637 @@
     <link rel="stylesheet" href="css/all.css">
     
     <!-- Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tamma+2&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Mrs+Saint+Delafield&display=swap" rel="stylesheet"><!-- Styles -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style_legacy.css">
     
     <title>morenostok.io</title>
-    <link rel="icon" href="img/dauntless3_icon.png" type="image/x-icon"/>
+    <link rel="icon" href="img/logo-dauntless-small.svg" type="image/x-icon"/>
   </head>
     
   <body>  
         
     <!-- navbar -->
-    <nav class="navbar navbar-custom">
-      <!--title-->
-      <div>
-        <span class="navbar-brand">
-          <h1 id="title" class="centerTxts">cmorenostokoe</h1>
-        </span>
-        <p style='color: ghostwhite; font-size: 0.8rem;'>
-          Chris Moreno-Stokoe<br>
-        </p>
+    <nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+      <span class="navbar-brand" style='color: black !important;'>
+        <img src='img/logo-dauntless-small.svg' style='height: 30px; width: 30px;'/>
+        Chris Moreno-Stokoe
+      </span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>      
+    
+      <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+          <li class="nav-item active">
+            <a class='nav-link'  title='Portfolio' href='#timeline'>Timeline</a>
+          </li>
+          <li class="nav-item">
+            <a class='nav-link' title='About' href='#about'>About me</a>
+          </li>
+          <li class="nav-item">
+            <a class='nav-link  target="_blank" title='email' href='mailto:chris.moreno-stokoe@bristol.ac.uk'><i class="fas fa-envelope"></i> Get in touch</a>
+          </li>
+        </ul>
       </div>
-      
-      <div class="dropdown"> <!-- Socials -->
-        <a class='socialsLrg'  target="_blank" title='university profile' href='https://research-information.bris.ac.uk/en/persons/chris-moreno-stokoe'><i class="fas fa-university"></i> About me </a>
-        <a class='socialsLrg'  target="_blank" title='email' href='mailto:chris.moreno-stokoe@bristol.ac.uk'><i class="fas fa-envelope"></i> Email me</a>
-        <a class='socialsLrg'  target="_blank" title='github' href='https://github.com/CMorenoStokoe'><i class="fab fa-github"></i> Code </a>
-      </div>       
     </nav>
 
-    <div class="jumbotron jumbotron-fluid">
-      <div class="container">
-        <h1 class="display-5">Innovation in digital healthcare</h1>
-        <p class="lead">A portfolio of innovation in the ways we understand health data and provide healthcare to patients.</p>
-      </div>
+    <div class="p-4 mb-0 jumbotron jumbotron-fluid shadow text-center" style='padding-top: 5rem !important;'>
+      <img src='img/logo-dauntless-small.svg' style='height: 150px; width: auto; max-width: 100%;'/>
+      <br><br>
+      <h1 class="display-5">Portals for understanding:</h1>
+      <p class="lead">
+        A timeline of innovation in understanding and delivering healthcare.
     </div>
         
-    <div class='container'>
-        <div class="spacer-50"> </div>
+    <div class='container d-flex flex-row justify-content-center align-items-center'>
+      <!-- Timeline -->
+      <div class='d-flex flex-column justify-content-start align-items-center'> 
 
-          <!-- Projects -->
-          <div class="card-columns">
-
-            
-            <div class="card my-4">
-              <div class="card-title">
-                <video class="card-img-top" src="promo/video-g4g.mp4" alt="Card image cap" autoplay muted>
-              </div>
-              <div class="card-body">
-                <p class="card-text">
-                  Games for good is a catalogue of knowledge games which are helping us understand public health                </p>
-                <a href="www.games4good.co.uk"><button type="button" class="btn btn-primary" target='_blank'>Visit</button></a>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Launched Q2 2021</small>
-                <img class="icon-xs" src="img/logo-dauntless.svg">
-              </div>
-            </div>
-
-            <div class="card my-4">
-              <img class="card-img-top" src="img/logo-mygeojson.PNG" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title lato d-flex align-items-center"><img class="icon-projects m-auto" src="img/mygeojson_promo.PNG"></h5>
-                <p class="card-text">
-                  A utility for population researchers to prepare GeoJSON map data for the UK from spreadsheets containing data by geographical area (LA & LSOA level)
-                </p>
-                <a href="https://www.morenostok.io/MyGeoJSON/" target='_blank'><button type="button" class="btn btn-primary">Visit</button></a>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Q1 2021</small>
-                <img class="icon-xs" src="img/logo-dauntless.svg">
-              </div>
-            </div>
-
-            <div class="card my-4">
-              <img class="card-img-top" src="img/mrg_promo.PNG" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title lato d-flex align-items-center"><img class="icon-projects m-auto" src="img/mendel_logo.JPG"></h5>
-                <p class="card-text">Players implicitly learn the complexity of network data in Genetic Epidemiology. 
-                  Play as a public health policy maker and intervene on factors such as smoking, exercise and socialisation in order to improve the health 
-                  of a simulated nation. We used an accurate propagation model and genetic data to build a realistic simulation, as complex as the real-life situation.</p>
-                <a href="https://www.morenostok.io/mendel" target='_blank'><button type="button" class="btn btn-primary">Play here</button></a>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Beta Q4 2020</small>
-                <img class="icon-sm" src="img/dynamicGenetics.png">
-              </div>
-            </div>
-
-            <div class="card my-4">
-              <img class="card-img-top" src="img/bilingualism_promo.PNG" alt="Card image cap">
-              <div class="card-body te">
-                <h5 class="card-title d-flex align-items-center p-2">Visualising data reliability</h5>
-                <p class="card-text">This visualisation demonstrates the impact of publication bias how researcher degrees of freedom can lead to over a hundred thousand different results from one study. A second version was presented at a regional academic conference (ESRC SWDTP conference).</p>
-                  <a href="bilingualism/index.html"><button type="button" class="btn btn-primary">v1</button></a> <a href="https://jeangoldinginstitute.blogs.bristol.ac.uk/2019/09/16/the-beauty-of-data-2019-a-jgi-data-visualisation-competition/"><i class="fas fa-award"></i> Jean Golding Institute award </a><br><br>
-                  <a href="bilingualism2/index.html"><button type="button" class="btn btn-primary">v2</button></a> ESRC conference
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Launched Q4 2019</small>
-                <img class="icon-sm" src="img/dynamicGenetics.png">
-              </div>
-            </div>
-            
-            <div class="card my-4">
-              <img class="card-img-top" src="img/mrnv_promo.PNG" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title d-flex align-items-center"><img class="icon-projects m-auto" src="img/MiRANA.png"></h5>
-                <p class="card-text">This easy-to use tool produces accurate network visualisations of interrelated data in genetic epidemiology. 
-                  Simply upload your data and press 'produce graph' to produce a publication-quality graphic that can be used for exploratory and 
-                  confirmatory analyses.
-                </p>
-                  <a href="mirana/index.html"><button type="button" class="btn btn-primary">Visit</button></a>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Beta Q1 2020</small>
-                <img class="icon-sm" src="img/dynamicGenetics.png">
-              </div>
-            </div>
-
-            <div class="card my-4">
-              <img class="card-img-top" src="img/gpva_promo.PNG" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title lato d-flex align-items-center"><img class="icon-projects m-auto" src="img/gpva_icon.png"></h5>
-                <p class="card-text">This virtual assistant was deployed and improved in an iterative design loop in response to patient feedback over a period of 6 months. By the end of this process, the GPVirtualAssistant was a fully functioning online-triage system consistently used by patients to relieve the burden on the largest general practice in the county.</p>
-                  <a href="GPVirtualAssistant/index.html"><button type="button" class="btn btn-primary">Visit</button></a>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Launched Q1 2019</small>
-                <img class="icon-sm" src="img/nhs_logo.jpg">
-              </div>
-            </div>
-
-            <div class="card my-4">
-              <img class="card-img-top" src="img/covidcomms-map.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title lato d-flex align-items-center"><img class="icon-projects m-auto" src="img/covidcomms.PNG"></h5>
-                <p class="card-text">As a team we produced a map which helps policy makers and public health experts identify
-                  the areas in Wales most vulnerable to COVID-19.</p>
-              
-                <a href="https://covidresponsemap.wales/" target='_blank'><button type="button" class="btn btn-primary">Visit</button></a>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Launched Q3 2020</small>
-                <img class="icon-sm" src="img/dynamicGenetics.png">
-              </div>
-            </div>
-            
-            <div class="card my-4">
-              <img class="card-img-top" src="img/planet.jpg" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title lato d-flex align-items-center m-auto p-2">Digital art</h5>
-                <p class="card-text">In my free time I enjoy making digital drawings and photography.</p>
-                  <a href="https://www.deviantart.com/cmorenostokoe"><button type="button" class="btn btn-primary"><i class="fab fa-deviantart"></i> Artwork</button></a><br><br>
-                  <a href="https://unsplash.com/@stokio/"><button type="button" class="btn btn-primary"><i class="fas fa-camera-retro"></i> Photography</button></a>
-                <hr>
-                <p class='m-auto p-2'><h5 class='m-auto p-2'>Icons for epidemiology</h5>
-                Free to use icons for epidemiologists</p>
-                <img src='img/epicons_logo.JPG' class='m-auto icon-projects' style='max-height: 100px !important;'>
-                <br><br>
-                <a href="epicons/index.html" class='m-auto'><button type="button" class="btn btn-primary"><i class="fas fa-icons"></i> Epicons</button></a>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted"></small>
-              </div>
-            </div>
-
-            <div class="card my-4">
-              <img class="card-img-top" src="img/advice_promo.PNG" alt="Card image cap">
-              <div class="card-body">
-                <h5 class="card-title d-flex align-items-center"><img class="icon-projects m-auto" src="img/advice2_logo.jpg"></h5>
-                <p class="card-text">
-                  This website was commissioned as the first point of contact for primary care patients. 
-                  A beskpoke advice directory helped relieve burden on the practice by providing online advice on acute 
-                  conditions, freeing up phone lines for more urgent calls. 
-                </p>
-                <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#galleryModal">
-                  Project gallery
-                </button>
-              </div>
-              <div class="card-footer">
-                <small class="text-muted">Launched Q4 2018</small>
-                <img class="icon-sm" src="img/nhs_logo.jpg">
-              </div>
-            </div>
-
+        <div class='pt-4 timeline d-flex flex-row'>
+          <div class='timeline-evt'>
+            <div class='timeline-evt-year'>2021</div>
+            <div class='timeline-evt-circle'></div>
+            <div class='timeline-evt-line'></div>
           </div>
-
-      </div> <!-- /card columns -->
-
-      <div class='d-flex flex-column justify-content-center align-items-center text-center'>
-        <h1 class='p-2 my-4'>Affiliations</h1>
-        <div class='row'>
-          <div class='col-md-6'>
-            <div class='h-100 d-flex flex-column justify-content-center align-items-center text-center'>
-              <img class="icon-affiliations" src="img/logo-dauntless.svg">
-              <p>Independent digital contractor for NHS primary care 2014-2017</p>
+          <div class="card my-4">
+            <div class="card-title">
+              <video class="card-img-top" src="promo/video-g4g.mp4" alt="Card image cap" autoplay muted>
             </div>
-          </div>
-          <div class='col-md-6'>
-            <div class='h-100 d-flex flex-column justify-content-center align-items-center text-center'>
-              <img class="icon-affiliations" src="img/dynamicGenetics.png">
-              <p>University of Bristol doctoral researcher in the Dynamic Genetics lab group (MRC Integrative Epidemiology Unit and School of Psychological Science)</p> 
+            <div class="card-body">
+              <p class="card-text">
+                Games for good is a catalogue of knowledge games which are helping us understand public health                </p>
+              <a href="www.games4good.co.uk"><button type="button" class="btn btn-primary" target='_blank'>Visit</button></a>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Launched Q2 2021</small>
+              <img class="icon-xs" src="img/logo-dauntless.svg">
             </div>
           </div>
         </div>
-      </div>
-    
-  <div class='spacer-150'></div>
+
+        <div class='pt-4 timeline d-flex flex-row'>
+          <div class='timeline-evt-sm'>
+            <div class='timeline-evt-line'></div>
+          </div>
+          <div class="card my-4" style='background: ghostwhite; color: black;'>
+            <div class="card-body">
+              <h5>Publication</h5>
+              <p class="card-text">
+                Woolf, B., Di Cara, N., Stokoe, C. M., Skrivankova, V., Drax, K., Higgins, J., ... & Richmond, R. (2021). Investigating the transparency of reporting in two-sample summary data Mendelian randomization studies. medRxiv.
+                <a href='https://www.medrxiv.org/content/10.1101/2021.10.15.21264972.abstract'>Read article</a>
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class='pt-4 timeline d-flex flex-row'>
+          <div class='timeline-evt-sm'>
+            <div class='timeline-evt-line'></div>
+          </div>
+          <div class="card my-4" style='background: ghostwhite; color: black;'>
+            <div class="card-body">
+              <h5>Publication</h5>
+              <p class="card-text">
+                Di Cara, N. H., Song, J., Maggio, V., Moreno-Stokoe, C., Tanner, A. R., Woolf, B., ... & Davies, A. (2020). Mapping population vulnerability and community support during COVID-19: a case study from Wales. International journal of population data science, 5(4).
+                <a href='https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8104153/'>Read article</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class='pt-4 timeline d-flex flex-row'>
+          <div class='timeline-evt-sm'>
+            <div class='timeline-evt-line'></div>
+          </div>
+          <div class="card my-4" style='background: ghostwhite; color: black;'>
+            <div class="card-body">
+              <h5>Senior Researcher</h5>
+              <p class="card-text">
+                <strong>
+                  Senior Researcher with Public Health Wales to produce a report on the impact of COVID-19 on the homeless population in Wales.
+                </strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class='pt-4 timeline d-flex flex-row'>
+          <div class='timeline-evt'>
+            <div class='timeline-evt-circle'></div>
+            <div class='timeline-evt-line'></div>
+          </div>
+          <div class="card my-4">
+            <img class="card-img-top" src="img/logo-mygeojson.PNG" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title lato d-flex align-items-center"><img class="icon-projects m-auto" src="img/mygeojson_promo.PNG"></h5>
+              <p class="card-text">
+                A utility for population researchers to prepare GeoJSON map data for the UK from spreadsheets containing data by geographical area (LA & LSOA level)
+              </p>
+              <a href="https://www.morenostok.io/MyGeoJSON/" target='_blank'><button type="button" class="btn btn-primary">Visit</button></a>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Q1 2021</small>
+              <img class="icon-xs" src="img/logo-dauntless.svg">
+            </div>
+          </div>
+        </div>
+
+        <div class='pt-4 timeline d-flex flex-row'>
+          <div class='timeline-evt'>
+            <div class='timeline-evt-year'>2020</div>
+            <div class='timeline-evt-circle'></div>
+            <div class='timeline-evt-line'></div>
+          </div>
+          <div class="card my-4">
+            <img class="card-img-top" src="img/mrg_promo.PNG" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title lato d-flex align-items-center"><img class="icon-projects m-auto" src="img/mendel_logo.JPG"></h5>
+              <p class="card-text">Players implicitly learn the complexity of network data in Genetic Epidemiology. 
+                Play as a public health policy maker and intervene on factors such as smoking, exercise and socialisation in order to improve the health 
+                of a simulated nation. We used an accurate propagation model and genetic data to build a realistic simulation, as complex as the real-life situation.</p>
+              <a href="https://www.morenostok.io/mendel" target='_blank'><button type="button" class="btn btn-primary">Play here</button></a>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Beta Q4 2020</small>
+              <img class="icon-sm" src="img/dynamicGenetics.png">
+            </div>
+          </div>
+        </div>
+
+        <div class='pt-4 timeline d-flex flex-row'>
+          <div class='timeline-evt'>
+            <div class='timeline-evt-circle'></div>
+            <div class='timeline-evt-line'></div>
+          </div>
+          <div class="card my-4">
+            <img class="card-img-top" src="img/covidcomms-map.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title lato d-flex align-items-center"><img class="icon-projects m-auto" src="img/covidcomms.PNG"></h5>
+              <p class="card-text">As a team we produced a map which helps policy makers and public health experts identify
+                the areas in Wales most vulnerable to COVID-19.</p>
+            
+              <a href="https://covidresponsemap.wales/" target='_blank'><button type="button" class="btn btn-primary">Visit</button></a>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Launched Q3 2020</small>
+              <img class="icon-sm" src="img/dynamicGenetics.png">
+            </div>
+          </div>
+        </div>
+        
+        <div class='pt-4 timeline d-flex flex-row'>
+          <div class='timeline-evt'>
+            <div class='timeline-evt-circle'></div>
+            <div class='timeline-evt-line'></div>
+          </div>
+          <div class="card my-4">
+            <img class="card-img-top" src="img/mrnv_promo.PNG" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title d-flex align-items-center"><img class="icon-projects m-auto" src="img/MiRANA.png"></h5>
+              <p class="card-text">This easy-to use tool produces accurate network visualisations of interrelated data in genetic epidemiology. 
+                Simply upload your data and press 'produce graph' to produce a publication-quality graphic that can be used for exploratory and 
+                confirmatory analyses.
+              </p>
+                <a href="mirana/index.html"><button type="button" class="btn btn-primary">Visit</button></a>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Beta Q1 2020</small>
+              <img class="icon-sm" src="img/dynamicGenetics.png">
+            </div>
+          </div>
+        </div>
+
+        <div class='pt-4 timeline d-flex flex-row'>
+          <div class='timeline-evt-sm'>
+            <div class='timeline-evt-line'></div>
+          </div>
+          <div class="card my-4" style='background: ghostwhite; color: black;'>
+            <div class="card-body">
+              <h5>Publication</h5>
+              <p class="card-text">
+                Moreno-Stokoe, C. M., & Damian, M. F. (2020). Employing Natural Control for Confounding Factors in the Hunt for the Bilingual Advantage in Attention: Evidence from School Children in Gibraltar. Journal of cognition, 3(1).
+                <a href='https://www.ncbi.nlm.nih.gov/pmc/articles/pmc7082826/'>Read article</a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class='pt-4 timeline d-flex flex-row'>
+          <div class='timeline-evt'>
+            <div class='timeline-evt-year'>2019</div>
+            <div class='timeline-evt-circle'></div>
+            <div class='timeline-evt-line'></div>
+          </div>
+          <div class="card my-4">
+            <img class="card-img-top" src="img/gpva_promo.PNG" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title lato d-flex align-items-center"><img class="icon-projects m-auto" src="img/gpva_icon.png"></h5>
+              <p class="card-text">This virtual assistant was deployed and improved in an iterative design loop in response to patient feedback over a period of 6 months. By the end of this process, the GPVirtualAssistant was a fully functioning online-triage system consistently used by patients to relieve the burden on the largest general practice in the county.</p>
+                <a href="GPVirtualAssistant/index.html"><button type="button" class="btn btn-primary">Visit</button></a>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Launched Q1 2019</small>
+              <img class="icon-sm" src="img/nhs_logo.jpg">
+            </div>
+          </div>
+        </div>
+
+        <div class='pt-4 timeline d-flex flex-row'>
+          <div class='timeline-evt-sm'>
+            <div class='timeline-evt-line'></div>
+          </div>
+          <div class="card my-4" style='background: ghostwhite; color: black;'>
+            <div class="card-body">
+              <h5>Report</h5>
+              <p class="card-text">
+                <strong>
+                  Report on the user experience of wellbeing apps as reported by users on the Google and Apple app stores for <em>Bounce Technologies ltd.</em>
+                </strong>
+              </p>
+            </div>
+          </div>
+        </div>     
+        
+        <div class='pt-4 timeline d-flex flex-row'>
+          <div class='timeline-evt-sm'>
+            <div class='timeline-evt-alt'></div>
+          </div>
+          <div class="card my-4" style='background: #00B8A9; color: black;'>
+            <div class="card-body">
+              <p class="card-text">
+                <strong>
+                  <i class="fas fa-award"></i> Jean Golding Institute Beauty of Data competition runner-up
+                </strong>
+              </p>
+            </div>
+          </div>
+        </div>      
+
+        <div class='pt-4 timeline d-flex flex-row'>
+          <div class='timeline-evt'>
+            <div class='timeline-evt-circle'></div>
+            <div class='timeline-evt-line'></div>
+          </div>
+          <div class="card my-4">
+            <img class="card-img-top" src="img/bilingualism_promo.PNG" alt="Card image cap">
+            <div class="card-body te">
+              <h5 class="card-title d-flex align-items-center p-2">Visualising data reliability</h5>
+              <p class="card-text">This visualisation demonstrates the impact of publication bias how researcher degrees of freedom can lead to over a hundred thousand different results from one study. A second version was presented at a regional academic conference (ESRC SWDTP conference).</p>
+                <a href="bilingualism/index.html"><button type="button" class="btn btn-primary">v1</button></a> <a href="https://jeangoldinginstitute.blogs.bristol.ac.uk/2019/09/16/the-beauty-of-data-2019-a-jgi-data-visualisation-competition/"><i class="fas fa-award"></i> Jean Golding Institute award </a><br><br>
+                <a href="bilingualism2/index.html"><button type="button" class="btn btn-primary">v2</button></a> ESRC conference
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Launched Q4 2019</small>
+              <img class="icon-sm" src="img/dynamicGenetics.png">
+            </div>
+          </div>
+        </div>
+
+        <div class='pt-4 timeline d-flex flex-row'>
+          <div class='timeline-evt-sm'>
+            <div class='timeline-evt-alt'></div>
+          </div>
+          <div class="card my-4 p-4" style='background: #00B8A9; color: black;'>
+           <img class="card-title" src="img/dynamicGenetics.png">
+            <div class="card-body">
+              <p class="card-text">
+                <strong>
+                  Started PhD (Psychology) in understanding complex network data in health science with the Dynamic Genetics lab group. Dynamic Genetics is part of the Medical Research Council Integrative Epidemiology Unit and School of Psychological Science at the University of Bristol.
+                </strong>
+              </p>
+            </div>
+          </div>
+        </div>        
+
+        
+        <div class='pt-4 timeline d-flex flex-row'>
+          <div class='timeline-evt-sm'>
+            <div class='timeline-evt-year'>2018</div>
+            <div class='timeline-evt-alt'></div>
+          </div>
+          <div class="card my-4" style='background: #00B8A9; color: black;'>
+            <div class="card-body">
+              <p class="card-text">
+                <strong>
+                  Graduated MSc Research Methods in Experimental Psychology from the University of Bristol.
+                </strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class='pt-4 timeline d-flex flex-row'>
+          <div class='timeline-evt-sm'>
+            <div class='timeline-evt-line'></div>
+          </div>
+          <div class="card my-4" style='background: ghostwhite; color: black;'>
+            <div class="card-body">
+              <h5>Report</h5>
+              <p class="card-text">
+                <strong>
+                  Gap analysis judging whether there is need in the market for a new self-guided tour application for <em>Totum Insight ltd.</em> 
+                </strong>
+              </p>
+            </div>
+          </div>
+        </div>  
+
+        <div class='pt-4 timeline d-flex flex-row'>
+          <div class='timeline-evt-sm'>
+            <div class='timeline-evt-grant'></div>
+          </div>
+          <div class="card my-4" style='background: gold; color: black;'>
+            <div class="card-body">
+              <h5>Grant</h5>
+              <p class="card-text">
+                <strong>
+                  Brigstow Highlight Call Living with Technology (for GP Virtual Assistant)
+                </strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class='pt-4 timeline d-flex flex-row'>
+          <div class='timeline-evt-sm'>
+            <div class='timeline-evt-grant'></div>
+          </div>
+          <div class="card my-4" style='background: gold; color: black;'>
+            <div class="card-body">
+              <h5>Grant</h5>
+              <p class="card-text">
+                <strong>
+                  Bristol Research and Enterprise Division New Enterprise Competition Round 1 (for GP Virtual Assistant)
+                </strong>
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class='pt-4 timeline d-flex flex-row'>
+          <div class='timeline-evt-sm'>
+            <div class='timeline-evt-alt'></div>
+          </div>
+          <div class="card my-4" style='background: #00B8A9; color: black;'>
+            <div class="card-body">
+              <p class="card-text">
+                <strong>
+                  <i class="fas fa-award"></i> Economic and Social Research Council SWDTP annual conference research prize winner
+                </strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class='pt-4 timeline d-flex flex-row'>
+          <div class='timeline-evt'>
+            <div class='timeline-evt-circle'></div>
+            <div class='timeline-evt-line'></div>
+          </div>
+          <div class="card my-4">
+            <img class="card-img-top" src="img/advice_promo.PNG" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title d-flex align-items-center"><img class="icon-projects m-auto" src="img/advice2_logo.jpg"></h5>
+              <p class="card-text">
+                This website was commissioned as the first point of contact for primary care patients. 
+                A beskpoke advice directory helped relieve burden on the practice by providing online advice on acute 
+                conditions, freeing up phone lines for more urgent calls. 
+              </p>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#galleryModal">
+                Project gallery
+              </button>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Launched Q4 2018</small>
+              <img class="icon-sm" src="img/nhs_logo.jpg">
+            </div>
+          </div>
+        </div>
+
+        <div class='pt-4 timeline d-flex flex-row'>
+          <div class='timeline-evt-sm'>
+            <div class='timeline-evt-year'>2017</div>
+            <div class='timeline-evt-alt'></div>
+          </div>
+          <div class="card my-4" style='background: #00B8A9; color: black;'>
+            <div class="card-body">
+              <p class="card-text">
+                <strong>
+                  <i class="fas fa-award"></i> Experimental Psychology Society (EPS) Advancement of Science Award nominee
+                </strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class='pt-4 timeline d-flex flex-row'>
+          <div class='timeline-evt-sm'>
+            <div class='timeline-evt-alt'></div>
+          </div>
+          <div class="card my-4" style='background: #00B8A9; color: black;'>
+            <div class="card-body">
+              <p class="card-text">
+                <strong>
+                  <i class="fas fa-award"></i> Highest overall disseration mark (University of Bristol School of Psychological Science)
+                </strong>
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class='pt-4 timeline d-flex flex-row'>
+          <div class='timeline-evt-sm'>
+            <div class='timeline-evt-alt'></div>
+          </div>
+          <div class="card my-4" style='background: #00B8A9; color: black;'>
+            <div class="card-body">
+              <p class="card-text">
+                <strong>
+                  Graduated BSc Experimental Psychology (1st class hons.) from the University of Bristol.
+                </strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class='pt-4 timeline d-flex flex-row'>
+          <div class='timeline-evt-sm'>
+            <div class='timeline-evt-line'></div>
+          </div>
+          <div class="card my-4" style='background: ghostwhite; color: black;'>
+            <div class="card-body">
+              <h5>Research assistant</h5>
+              <p class="card-text">
+                <strong>
+                  Assisted the set up for Electroencephalogram (EEG) research at the Unviersity of Bristol under Sarah Von Grebmer and Dr. Nina Kazanina
+                </strong>
+              </p>
+            </div>
+          </div>
+        </div>  
+
+        <div class='pt-4 timeline d-flex flex-row'>
+          <div class='timeline-evt-sm'>
+            <div class='timeline-evt-year'>2016</div>
+            <div class='timeline-evt-line'></div>
+          </div>
+          <div class="card my-4" style='background: ghostwhite; color: black;'>
+            <div class="card-body">
+              <h5>Research assistant</h5>
+              <p class="card-text">
+                <strong>
+                  Assisted testing school chilren in the Bristol area as part of literacy studies being conducted by Dr. Jess Fielding and Dr. Danielle Colenbrander
+                </strong>
+              </p>
+            </div>
+          </div>
+        </div>  
+
+        <div class='pt-4 timeline d-flex flex-row'>
+          <div class='timeline-evt-sm'>
+            <div class='timeline-evt-year'>2015</div>
+            <div class='timeline-evt-line'></div>
+          </div>
+          <div class="card my-4" style='background: ghostwhite; color: black;'>
+            <div class="card-body">
+              <h5>Research assistant</h5>
+              <p class="card-text">
+                <strong>
+                  Assisted cognitive testing of language processes under Prof. Markus Damian
+                </strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class='pt-4 timeline d-flex flex-row'>
+          <div class='timeline-evt-sm'>
+            <div class='timeline-evt-line'></div>
+          </div>
+          <div class="card my-4" style='background: ghostwhite; color: black;'>
+            <div class="card-body">
+              <h5>Digital technician</h5>
+              <p class="card-text">
+                <strong>
+                  Digital signage technician (PT alongside studies) for practices in the Aspen Centre cluster of general medical practices in Gloucestershire
+                </strong>
+              </p>
+            </div>
+          </div>
+        </div>
+        
+        <div class='pt-4 timeline d-flex flex-row'>
+          <div class='timeline-evt-sm'>
+            <div class='timeline-evt-line'></div>
+          </div>
+          <div class="card my-4" style='background: ghostwhite; color: black;'>
+            <div class="card-body">
+              <h5>Digital technician</h5>
+              <p class="card-text">
+                <strong>
+                  Webdesigner and webmaster (PT alongside studies) for Barnwood Medical Practice, Gloucestershire
+                </strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class='pt-4 timeline d-flex flex-row'>
+          <div class='timeline-evt-sm'>
+            <div class='timeline-evt-year'>2014</div>
+            <div class='timeline-evt-line'></div>
+          </div>
+          <div class="card my-4" style='background: ghostwhite; color: black;'>
+            <div class="card-body">
+              <h5>Administrator</h5>
+              <p class="card-text">
+                <strong>
+                  Records clerk (PT alongside studies) for the Portland Surgery, Gloucestershire
+                </strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class='pt-4 timeline d-flex flex-row'>
+          <div class='timeline-evt-sm'>
+            <div class='timeline-evt-year'>2012</div>
+            <div class='timeline-evt-line'></div>
+          </div>
+          <div class="card my-4" style='background: ghostwhite; color: black;'>
+            <div class="card-body">
+              <h5>Administrator</h5>
+              <p class="card-text">
+                <strong>
+                  Data administrator (PT alongside studies) for Barnwood Medical Practice, Gloucestershire
+                </strong>
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class='pt-4 timeline d-flex flex-row'>
+          <div class='timeline-evt'>
+            <div class='timeline-evt-circle'></div>
+            <div class='timeline-evt-line'></div>
+          </div>
+          <div class="card my-4">
+            <img class="card-img-top" src="img/planet.jpg" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title lato d-flex align-items-center m-auto p-2">Digital art</h5>
+              <p class="card-text">In my free time I enjoy making digital drawings and photography.</p>
+                <a href="https://www.deviantart.com/cmorenostokoe"><button type="button" class="btn btn-primary"><i class="fab fa-deviantart"></i> Artwork</button></a><br><br>
+                <a href="https://unsplash.com/@stokio/"><button type="button" class="btn btn-primary"><i class="fas fa-camera-retro"></i> Photography</button></a>
+              <hr>
+              <p class='m-auto p-2'><h5 class='m-auto p-2'>Icons for epidemiology</h5>
+              Free to use icons for epidemiologists</p>
+              <img src='img/epicons_logo.JPG' class='m-auto icon-projects' style='max-height: 100px !important;'>
+              <br><br>
+              <a href="epicons/index.html" class='m-auto'><button type="button" class="btn btn-primary"><i class="fas fa-icons"></i> Epicons</button></a>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted"></small>
+            </div>
+          </div>
+        </div>
+
+    </div>
+  </div>
+
+  <div class="mt-0 mb-0 jumbotron jumbotron-fluid shadow" style='background: white;' id='about'>
+    <div class="d-flex flex-column justify-content-center align-items-center">
+      <img class="icon-affiliations" src="img/logo-dauntless.svg">
+      <br>
+      <h1 class="display-5">About me</h1><br>
+      <p class="lead m-2 p-2 text-center">
+        I am a human computer interaction Psychologist. I design digital services for interaction. 
+        <br><br>
+        I am a distinguished early career researcher with a background in NHS organisation and Psychology. 
+        I have worked with organisations including Public Health Wales, NHS general practices, the University of Bristol, and I have volunteered with charity organisations including Age UK and EndCoronaVirus.org. 
+        I seek to understand how we can better design services to understand human health and deliver health care more effectively. 
+        <a href='https://research-information.bris.ac.uk/en/persons/chris-moreno-stokoe'>You can read more at my researcher profile. </a>
+        <br><br>
+        <div class="d-flex d-row justify-content-center align-items-center text-center" style='max-width: 100%; overflow:scroll;'>
+            <a href="https://www.swdtp.ac.uk/" target="_blank"><img class="icon-promo m-auto p-2" src="img/esrcAndSwdtp.png"></a>
+
+            <a href="https://dynamicgenetics.org/" target="_blank"><img class="icon-promo m-auto p-2" src="img/dynamicGenetics.png"></a>
+
+            <a href="http://www.bristol.ac.uk/integrative-epidemiology/" target="_blank"><img class="icon-promo m-auto p-2" src="img/ieu.png"></a>
+
+            <a href="https://www.bristol.ac.uk/" target="_blank"><img class="icon-promo m-auto p-2" src="img/uob.png"></a>
+
+            <a href="http://www.bristol.ac.uk/red/nec/" target="_blank"><img class="icon-promo m-auto p-2" src="img/nec_logo.jpg"></a>
+
+            <a href="http://www.bristol.ac.uk/brigstow/" target="_blank"><img class="icon-promo m-auto p-2" src="img/brigstow_logo.png"></a>
+
+            <a href="http://www.nhs.co.uk/" target="_blank"><img class="icon-promo m-auto p-2" src="img/nhs_logo.jpg"></a>
+
+            <a href="http://www.aspenmedicalpractice.co.uk/" target="_blank"><img class="icon-promo m-auto p-2" src="img/advice2_logo.jpg"></a>
+        </div>
+    </div>
   </div>
 
   <!-- GP Website project gallery modal -->
@@ -282,28 +705,6 @@
       </div>
     </div>
   </div>
-
-  <nav class="navbar fixed-bottom navbar-custom-foot">
-    <img class="icon-footer" src="img/dauntless2_icon.png">
-    <div class="d-flex d-row justify-content-center align-items-center text-center">
-      <h5 class='p-2'>Supported by: </h5>
-        <a href="https://www.swdtp.ac.uk/" target="_blank"><img class="icon-promo m-auto p-2" src="img/esrcAndSwdtp.png"></a>
-
-        <a href="https://dynamicgenetics.org/" target="_blank"><img class="icon-promo m-auto p-2" src="img/dynamicGenetics.png"></a>
-
-        <a href="http://www.bristol.ac.uk/integrative-epidemiology/" target="_blank"><img class="icon-promo m-auto p-2" src="img/ieu.png"></a>
-
-        <a href="https://www.bristol.ac.uk/" target="_blank"><img class="icon-promo m-auto p-2" src="img/uob.png"></a>
-  
-        <a href="http://www.bristol.ac.uk/red/nec/" target="_blank"><img class="icon-promo m-auto p-2" src="img/nec_logo.jpg"></a>
-
-        <a href="http://www.bristol.ac.uk/brigstow/" target="_blank"><img class="icon-promo m-auto p-2" src="img/brigstow_logo.png"></a>
-
-        <a href="http://www.nhs.co.uk/" target="_blank"><img class="icon-promo m-auto p-2" src="img/nhs_logo.jpg"></a>
-
-        <a href="http://www.aspenmedicalpractice.co.uk/" target="_blank"><img class="icon-promo m-auto p-2" src="img/advice2_logo.jpg"></a>
-    </div>
-  </nav>
 
   <!-- Scripts -->
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

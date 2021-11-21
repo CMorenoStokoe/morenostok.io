@@ -1,9 +1,9 @@
 /*GLOBAL*/
 *{
-    font-family: 'Rajdhani', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 body{
-    background-color: ghostwhite;
+    background-color: #2D4059;
 }
 .centerTxts{
     text-align: center;
@@ -31,6 +31,10 @@ th,td{
 .dropdown{
     margin-top: 10px;
 }
+.card{
+    width: 300px;
+    max-width: 80%;
+}
 .card-columns {
     column-count: 1;
 }
@@ -55,17 +59,90 @@ th,td{
     }
 }
 
+/* TIMELINE */
+.timeline{
+    border-width: 1rem;
+    border-style: solid;
+    /*border-image: 
+      linear-gradient(
+        to bottom, 
+        rgb(0, 174, 255), 
+        rgba(255, 196, 0, 1)
+      ) 1 100%;*/
+    border-color: #00B8A9;
+    border-right: none;
+    border-top: none;
+    border-bottom: none;
+}
+.timeline-evt{
+    margin-right: 4rem;
+    border-radius: 100%;
+    position: relative;
+    left: -2.5rem;
+    top: 5rem;
+}
+.timeline-evt-sm{
+    margin-right: 4rem;
+    border-radius: 100%;
+    position: relative;
+    left: -2.5rem;
+    top: 2.5rem;
+}
+.timeline-evt-year{
+    position: absolute;
+    left: -6rem;
+    top: -4rem;
+    font-size: 3rem;
+    color: ghostwhite;
+}
+.timeline-evt-circle{
+    max-width: 2rem;
+    max-height: 2rem;
+    padding: 2rem;
+    border-radius: 100%;
+    background: ghostwhite;
+    position: absolute;
+    left: 0px;
+}
+.timeline-evt-line{
+    padding: 0.5rem;
+    max-height: 0.5rem;
+    width: 8rem;
+    background:ghostwhite;
+    position: absolute;
+    left: 2rem;
+    top: 1.5rem;
+    z-index: -1;
+}
+.timeline-evt-alt{
+    padding: 0.5rem;
+    max-height: 0.5rem;
+    width: 8rem;
+    background:#00B8A9;
+    position: absolute;
+    left: 2rem;
+    top: 1.5rem;
+    z-index: -1;
+}
+
+.timeline-evt-grant{
+    padding: 0.5rem;
+    max-height: 0.5rem;
+    width: 8rem;
+    background:gold;
+    position: absolute;
+    left: 2rem;
+    top: 1.5rem;
+    z-index: -1;
+}
+
 /*HEAD*/
 .navbar-brand{
     text-align:center;
     color: ghostwhite !important;
 }
-
-.lato{
-}
-
 .navbar-custom{
-    background-color: #021227;
+    background-color: #2d4059;
     border-bottom: 3px solid !important;
     border-color: ghostwhite !important;
 }
@@ -182,9 +259,6 @@ th,td{
 .epicon-div-gen4{
     background-color: #666;
     color: white;
-}
-.epicon-link{
-    
 }
 .nav-link:hover{
     cursor: pointer !important;
