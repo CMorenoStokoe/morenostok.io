@@ -1,19 +1,24 @@
 /* Theme */
-.btn-danger, .bg-danger {
+.btn-danger,
+.bg-danger {
     background-color: #F05945;
 }
-.text-danger{
+
+.text-danger {
     color: #F05945;
 }
-.btn-info, .bg-info {
-    background-color: rgb(5, 161, 153);
+
+.btn-info,
+.bg-info {
+    background-color: #05a199;
 }
-.text-info{
+
+.text-info {
     color: rgb(5, 161, 153);
 }
 
 /*Text*/
-*{
+* {
     font-family: 'Rajdhani', sans-serif;
 }
 
@@ -21,79 +26,93 @@
 .card-columns {
     column-count: 1;
 }
-@media (min-width: 576px) { 
+
+@media (min-width: 576px) {
     .card-columns {
         column-count: 1;
     }
 }
-@media (min-width: 768px) { 
+
+@media (min-width: 768px) {
     .card-columns {
         column-count: 1;
     }
 }
-@media (min-width: 992px) { 
+
+@media (min-width: 992px) {
     .card-columns {
         column-count: 2;
     }
 }
-@media (min-width: 1200px) { 
+
+@media (min-width: 1200px) {
     .card-columns {
         column-count: 3;
     }
 }
 
 /* Sizing */
-.xs{
+.xs {
     height: 25px;
 }
-.sm{
+
+.sm {
     height: 50px;
 }
-.lg{
+
+.lg {
     height: 75px;
 }
-.xl{
+
+.xl {
     height: 100px;
 }
-.x2{
+
+.x2 {
     height: 200px;
 }
-.x4{
+
+.x4 {
     height: 400px;
 }
 
-.mh-60{
-    max-width:100%;
+.mh-60 {
+    max-width: 100%;
     max-height: 60px;
     width: auto;
     height: auto;
 }
 
 /*Img sizing*/
-.img-xs{
+.img-xs {
     width: auto;
     height: 45px;
     float: right;
 }
-.img-sm{
+
+.img-sm {
     width: 80px;
     height: auto;
     float: right;
 }
-.img-md{
-    height:60px;
+
+.img-md {
+    height: 60px;
 }
-.icon-lg{
-    height:100px;
+
+.icon-lg {
+    height: 100px;
 }
-.img-full{
-    max-width:100%;
-    max-height:60px;
+
+.img-full {
+    max-width: 100%;
+    max-height: 60px;
     height: auto;
 }
-.img-responsive{ 
-    max-width:230px;
-    max-height:95px;
+
+.img-responsive {
+    max-width: 230px;
+    max-height: 95px;
     width: auto;
     height: auto;
 }
@@ -102,7 +121,7 @@
 .carousel-control-prev-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
 }
-   
+
 .carousel-control-next-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23000' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
 }
@@ -116,6 +135,7 @@
     -moz-animation: GradientAnimation 6s ease infinite;
     animation: GradientAnimation 6s ease infinite;
 }
+
 .wavy-classy {
     background: linear-gradient(323deg, #14b89c, #007cb5);
     background-size: 400% 400%;
@@ -124,6 +144,7 @@
     -moz-animation: GradientAnimation 15s ease infinite;
     animation: GradientAnimation 15s ease infinite;
 }
+
 .wavy-dark {
     background: linear-gradient(323deg, #000000, #1b6578);
     background-size: 400% 400%;
@@ -132,83 +153,123 @@
     -moz-animation: GradientAnimation 15s ease infinite;
     animation: GradientAnimation 15s ease infinite;
 }
+
 @-webkit-keyframes GradientAnimation {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@-moz-keyframes GradientAnimation {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
-}
-@keyframes GradientAnimation {
-    0%{background-position:0% 50%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 50%}
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
 }
 
-/* Pulse animations (https://codepen.io/olam/pen/zcqea)*/ 
+@-moz-keyframes GradientAnimation {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+@keyframes GradientAnimation {
+    0% {
+        background-position: 0% 50%
+    }
+
+    50% {
+        background-position: 100% 50%
+    }
+
+    100% {
+        background-position: 0% 50%
+    }
+}
+
+/* Pulse animations (https://codepen.io/olam/pen/zcqea)*/
 .fire {
     animation: glow 1s infinite alternate;
 }
+
 @keyframes glow {
     to {
         text-shadow: 0 0 12px rgb(255, 196, 0);
     }
 }
+
 .fire:hover {
     animation: none;
 }
+
 .pulse {
     animation: pulse 2s infinite;
 }
+
 .pulse:hover {
     animation: none;
 }
+
 @-webkit-keyframes pulse {
     0% {
         -webkit-box-shadow: 0 0 0 0 #A3D2CA;
     }
+
     70% {
-        -webkit-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+        -webkit-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
     }
+
     100% {
-        -webkit-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+        -webkit-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
     }
 }
+
 @keyframes pulse {
     0% {
         -moz-box-shadow: 0 0 0 0 #A3D2CA;
         box-shadow: 0 0 0 0 #A3D2CA;
     }
+
     70% {
-        -moz-box-shadow: 0 0 0 10px rgba(204,169,44, 0);
-        box-shadow: 0 0 0 10px rgba(204,169,44, 0);
+        -moz-box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
+        box-shadow: 0 0 0 10px rgba(204, 169, 44, 0);
     }
+
     100% {
-        -moz-box-shadow: 0 0 0 0 rgba(204,169,44, 0);
-        box-shadow: 0 0 0 0 rgba(204,169,44, 0);
+        -moz-box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
+        box-shadow: 0 0 0 0 rgba(204, 169, 44, 0);
     }
 }
 
 /* Glassmorphism (https://glassmorphism.com/) */
 .glassy {
-    background: rgba( 255, 255, 255, 0.4 );
-    backdrop-filter: blur( 4px );
-    -webkit-backdrop-filter: blur( 4px );
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
 }
+
 .glassy-white {
-    background: rgba( 255, 255, 255, 0.80 );
-    backdrop-filter: blur( 1.5px );
-    -webkit-backdrop-filter: blur( 1.5px );
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(1.5px);
+    -webkit-backdrop-filter: blur(1.5px);
 }
+
 .glassy-dark {
-    background: rgba( 4, 0, 0, 0.5 );
-    backdrop-filter: blur( 4.5px );
-    -webkit-backdrop-filter: blur( 4.5px );
+    background: rgba(4, 0, 0, 0.5);
+    backdrop-filter: blur(4.5px);
+    -webkit-backdrop-filter: blur(4.5px);
 }
-.glassy-border{
+
+.glassy-border {
     border-radius: 10px;
-    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    border: 1px solid rgba(255, 255, 255, 0.18);
 }
